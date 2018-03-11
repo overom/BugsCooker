@@ -55,6 +55,12 @@ h2 {
     display: block;
     padding: 0;
     margin: 0;
+    background: #fff8f2;
+}
+
+.figure .col-12 {
+    margin: 0;
+    padding: 0;
 }
 
 .figure h2 {
@@ -63,24 +69,22 @@ h2 {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 2rem;
-    opacity: 0;
+    visibility: hidden;
+    color: #554f48;
 }
 
-.figure {
-    background: #fff;
+.figure:hover img+h2 {
+    visibility: visible;
+    -webkit-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
 }
 
 .figure img {
     opacity: 1;
-    -webkit-transition: .9s ease-in-out;
-    transition: .9s ease-in-out;
+    -webkit-transition: .4s ease-in-out;
+    transition: .4s ease-in-out;
 }
 
 .figure:hover img {
-    opacity: .5;
-}
-
-.figure .col-12 {
-    margin: 0;
-    padding: 0;
+    opacity: .3;
 }

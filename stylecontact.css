@@ -3,8 +3,12 @@ body{
     background-color: #554F49
 }
 
-section{
+section, footer{
     color: #FFF8F3
+}
+
+.font-grey{
+    color: #554F49;
 }
 
 /* separateur hr 
@@ -94,25 +98,25 @@ hr{
 
 /*social media icons - CSS animation */
 
-section#contact ul a {
+section#contact ul a, i {
     display: inline-block;
     width: 128px;
     height: 128px;
-    transition: all .5s;
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
-    -o-transition: all .5s;
+    transition: all .7s;
+    -moz-transition: all .7s;
+    -webkit-transition: all .7s;
+    -o-transition: all .7s;
 }
 
-a.fb {
+a.fb, .fa-facebook {
     background: url(images/social_media.png) -256px top;
 }
 
-a.tw {
+a.tw, .fa-twitter {
     background: url(images/social_media.png)  -512px top;
 }
 
-a.ytube {
+a.ytube, .fa-youtube {
     background: url(images/social_media.png) -640px top;
 }
 
@@ -120,15 +124,15 @@ a.toque {
     background: url(images/toques-blanches-nb.png) no-repeat;
 }
 
-section#contact li:hover a.fb {
+section#contact li:hover a.fb, .fa-facebook:hover {
     background: url(images/social_media.png) -256px bottom;
 }
 
-section#contact li:hover a.tw {
+section#contact li:hover a.tw, .fa-twitter:hover {
     background: url(images/social_media.png) -512px bottom;
 }
 
-section#contact li:hover a.ytube {
+section#contact li:hover a.ytube, .fa-youtube:hover {
     background: url(images/social_media.png) -640px bottom;
 }
 

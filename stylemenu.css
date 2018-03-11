@@ -1,5 +1,27 @@
 /* GENERAL  */
 
+html {
+    font-size: 14px;
+}
+
+@include media-breakpoint-up(sm) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    html {
+        font-size: 36px;
+    }
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -17,9 +39,8 @@ p {
     src: url('Fuji-Medium.otf');
 }
 
-h1 {
+h2 {
     font-family: 'Fuji', Arial, Helvetica, sans-serif;
-    font-size: 3rem;
 }
 
 /* MENU */
@@ -36,13 +57,30 @@ h1 {
     margin: 0;
 }
 
-.figure h1 {
+.figure h2 {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    font-size: 2rem;
+    opacity: 0;
+}
+
+.figure {
+    background: #fff;
 }
 
 .figure img {
-    width: 100%;
+    opacity: 1;
+    -webkit-transition: .9s ease-in-out;
+    transition: .9s ease-in-out;
+}
+
+.figure:hover img {
+    opacity: .5;
+}
+
+.figure .col-12 {
+    margin: 0;
+    padding: 0;
 }

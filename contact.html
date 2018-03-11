@@ -2,30 +2,149 @@
 <html lang="en">
 
 <head>
+    <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="stylecontact.css">
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.3.0/bootstrap.min.css" />
+
+    <link rel="stylesheet" type="text/css" href="stylecontact.css">
+
+    <script type="text/javascript" src="scriptcontact.js"></script>
     <title>Contact</title>
+    <!-- Script map -->
+    <script type="text/javascript">
+        var map;
+        $(document).ready(function () {
+            map = new GMaps({
+                el: '#map',
+                lat: 45.760255,
+                lng: 4.828231899999992
+            });
+            map.addMarker({
+                lat: 45.760255,
+                lng: 4.828231899999992,
+                title: 'Lyon',
+                details: {
+                    database_id: 42,
+                    author: 'HPNeo'
+                },
+                click: function (e) {
+                    if (console.log)
+                        console.log(e);
+                    alert('Bug Cooker - 33 Quai Romain Rolland - 69005 Lyon');
+                },
+                mouseover: function (e) {
+                    if (console.log)
+                        console.log(e);
+                }
+            });
+            map.addMarker({
+                lat: 45.760255,
+                lng: 4.828231899999992,
+                title: 'Marker with InfoWindow',
+                infoWindow: {
+                    content: '<p>HTML Content</p>'
+                }
+            });
+        });
+    </script>
 </head>
 
 <body>
-    <section>
+    <!-- Titre contact -->
+    <header>
         <div class="container fluid">
             <div class="row justify-content-md-center">
-                <div class="col">
-                    <div>
-                        <h1>Réservation</h1>
+                <div class="col-md-4 offset-md-4 mx-auto">
+                    <div class="text-center titre-contact-borderExt">
+                        <div class="titre-contact-borderInt ">
+                            <h1 class="text-sm-center font-weight-bold font-grey">Contact</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Coordonée du restaurant -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 text-center" style=" padding-top: 70px;">
+                    <h2>Nous contacter</h2>
+                    <hr>
+                    <p>33 Quai Romain Roland 69005 LYON</p>
+                    <div class="separation">
+                        <hr>
+                    </div>
+                    <p>06 79 83 45 15
+                        <br> mail@bugscooker.com
+                    </p>
+                    <a class="btn btn-primary" href="mail@bugscooker.com" role="button">Nous contacter</a>
+                    <div class="separation">
+                        <hr>
                     </div>
 
+                </div>
+                <div class="col-md-6 mx-auto text-center">
+                    <h2 style=" padding-top: 70px; ">Nous sommes aussi ici</h2>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class='tw' href="https://twitter.com/"></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class='fb' href="https://facebook.com/"></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class='ytube' href="https://youtube.com/"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul style="padding-left: 60px;">
+                                    <li class="list-inline-item">
+                                        <a class='toque' href="http://www.toques-blanches-lyonnaises.com/"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
 
 
+
+
+
+        <!-- Map -->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <div class="span11">
+                        <div id="map"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin Map -->
     </section>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

@@ -18,9 +18,17 @@ body {
 #menu01 p {
     font-family: 'PT Serif Caption', serif;
     color: #554f48;
+    margin-top: 50px;
+    font-size: .9rem;
+}
+
+#menu01 img {
+    margin-top: 40px;
 }
 
 #menu01 h2 {
     font-family: "Fuji", Arial, Helvetica, sans-serif;
     color: #554f48;
+    margin-top: 40px;
+    margin-bottom: 10px;
 }

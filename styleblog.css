@@ -1,33 +1,38 @@
 #blog {
-    padding-top: 85px;
-    padding-bottom: 65px;
-    background-color: #fff8f2;
+  padding-top: 85px;
+  padding-bottom: 60px;
+  background-color: #fff8f2;
 }
 
 #blog p {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: "PT Serif Caption", Arial, Helvetica, sans-serif;
-    color: #fff8f2;
-    font-weight: lighter;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Serif Caption", Arial, Helvetica, sans-serif;
+  color: #fff8f2;
+  font-weight: lighter;
 }
 
 #blog h3 {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: "Fuji", Arial, Helvetica, sans-serif;
-    color: #fff8f2;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fuji", Arial, Helvetica, sans-serif;
+  color: #fff8f2;
 }
 
 @font-face {
-    font-family: "Fuji";
-    src: url('Fuji-Regular.otf');
-    src: url('Fuji-Light.otf');
-    src: url('Fuji-Bold.otf');
-    src: url('Fuji-Medium.otf');
+  font-family: "Fuji";
+  src: url("Fuji-Regular.otf");
+  src: url("Fuji-Light.otf");
+  src: url("Fuji-Bold.otf");
+  src: url("Fuji-Medium.otf");
 }
 
 .card {
-    border: 0px;
-    background-color: #554f48;
+  border: 0px;
+  background-color: #554f48;
+}
+
+#avis {
+  padding-bottom: 150px;
+  background-color: #fff8f2;
 }

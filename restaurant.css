@@ -1,0 +1,118 @@
+.Restaurant__text {
+  font-size: 1.5em;
+}
+
+.Restaurant__text--title {
+  font-size: 2em;
+}
+
+.Restaurant__text--sign {
+  text-align: right;
+}
+
+.Restaurant__text--fadeInUp {
+  -webkit-animation-name: Restaurant__text--fadeInUp;
+  animation-name: Restaurant__text--fadeInUp;
+    animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
+.Restaurant__text--fadeInRight {
+  -webkit-animation-name: Restaurant__text--fadeInRight;
+  animation-name: Restaurant__text--fadeInRight;
+      animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
+.Restaurant__text--fadeInLeft {
+  -webkit-animation-name: Restaurant__text--fadeInLeft;
+  animation-name: Restaurant__text--fadeInLeft;
+      animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
+
+@-webkit-keyframes Restaurant__text--fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes Restaurant__text--fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes Restaurant__text--fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes Restaurant__text--fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@-webkit-keyframes Restaurant__text--fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes Restaurant__text--fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

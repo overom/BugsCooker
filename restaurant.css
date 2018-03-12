@@ -1,5 +1,70 @@
+.card-body {
+  border-radius: 0px;
+  border-width: 0px;
+}
+.Restaurant__text--title--dephasage {
+  position: relative;
+  top: -50px;
+}
+.Restaurant__hidden {
+  opacity: 0;
+}
+.Restaurant__background1 {
+  background-color: rgb(200, 200, 200)
+}
+
+.Restaurant__background2 {
+  background-color: rgb(10, 10, 10)
+}
+
+.Restaurant__background3 {
+  background-color: rgb(150, 150, 150)
+}
+
+.Restaurant__galleryZoom {
+  /* width: 100%; */
+  /* float: left; */
+  /* display : flex;
+  flex-wrap: wrap; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Restaurant__galleryZoom--display {
+  display: none;
+  position: absolute;
+  margin: auto;
+  color: white;
+  font-weight: bold;
+}
+
+.Restaurant__gallery--smallImage {
+  width: 100%;
+  /* height: auto; */
+  /* width: 250px; */
+}
+.Restaurant__gallery--smallImage:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+/* .Restaurant__gallery figure:hover .Restaurant__gallery--zoom {
+  display: flex;
+} */
+.Restaurant__gallery figure {
+  /* display: block; */
+  /* float: left; */
+  margin: 10px 5px 5px 0;
+  padding: 0 0 0 0;
+  /* width: 150px; */
+}
+.Restaurant__gallery figcaption {
+  display: none;
+}
+
 .Restaurant__text {
   font-size: 1.5em;
+  /* margin: 20px 5px 0px 5px; */
+  padding-top: 20px;
 }
 
 .Restaurant__text--title {

@@ -1,1 +1,66 @@
-/* CSS reservation
+#reservation .card-header {
+  margin: 10px 0 10px 0;
+}
+
+.reservation__page {
+  position: fixed;
+  left: 10vw;
+  top: 10vh;
+  width: 80vw;
+  max-height: 80vh;
+  background-color: rosybrown;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-vertical;
+}
+
+.reservation__page--hidden {
+  opacity: 0;
+}
+
+/* .reservation__submit--border {
+  border: 1px solid #554f48;
+  border-radius: 0;
+}
+
+.reservation__submit--secondBorder {
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 0;
+} */
+.reservation__submit {
+  margin: 10px 0 10px 0;
+}
+
+.reservation__page--fade {
+  -webkit-animation-name: reservation__page--fade;
+  animation-name: reservation__page--fade;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+}
+
+@-webkit-keyframes reservation__page--fade {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes reservation__page--fade {
+  from {
+    opacity: 0;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}

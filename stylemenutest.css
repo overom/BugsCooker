@@ -67,3 +67,8 @@ h2 {
 #menu .figure:hover img {
   opacity: 0.3;
 }
+
+.bloc-menu-marron {
+  padding-bottom: 500px;
+  background-color: black;
+}

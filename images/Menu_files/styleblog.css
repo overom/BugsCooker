@@ -38,20 +38,3 @@
   padding-bottom: 150px;
   background-color: #fff8f2;
 }
-
-#avis span {
-  font-size: 0.8rem;
-  font-style: italic;
-  color: #fff8f26e;
-}
-
-#avis hr {
-  margin-top: 35px;
-  border: 0.5px solid #fff8f3;
-  max-width: 15%;
-}
-
-#blog hr {
-  border: 0.5px solid #fff8f3;
-  max-width: 30%;
-}

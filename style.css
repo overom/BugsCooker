@@ -480,3 +480,56 @@ section#contact li:hover a.toque {
 .lienFooter {
   color: #fff8f3;
 }
+
+/* BLOG */
+
+#blog {
+  padding-top: 85px;
+  padding-bottom: 60px;
+  background-color: #fff8f2;
+}
+
+#blog,
+#avis p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Serif Caption", Arial, Helvetica, sans-serif;
+  color: #fff8f2;
+  font-weight: lighter;
+}
+
+#blog,
+#avis h3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fuji", Arial, Helvetica, sans-serif;
+  color: #fff8f2;
+}
+
+#blog .card,
+#avis .card {
+  border: 0px;
+  background-color: #554f48;
+}
+
+#avis {
+  padding-bottom: 150px;
+  background-color: #fff8f2;
+}
+
+#avis span {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: #fff8f26e;
+}
+
+#avis hr {
+  margin-top: 35px;
+  border: 0.5px solid #fff8f3;
+  max-width: 15%;
+}
+
+#blog hr {
+  border: 0.5px solid #fff8f3;
+  max-width: 30%;
+}

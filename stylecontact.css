@@ -1,12 +1,17 @@
 /* CSS contact*/
 
-body {
+/*body {
   background-color: #554f49;
 }
+*/
 
-section,
 footer {
+  background-color: #000;
+}
+
+.sectionContact {
   color: #fff8f3;
+  background-color: #554f49;
 }
 
 .font-grey {
@@ -14,7 +19,7 @@ footer {
 }
 
 hr {
-  border: 2px solid #fff8f3;
+  border: 0.5px solid #fff8f3;
   max-width: 20%;
 }
 
@@ -159,4 +164,8 @@ section#contact li:hover a.toque {
   section#contact li a.toque {
     background: url(images/toques-blanches.png) no-repeat;
   }
+}
+
+.lienFooter {
+  color: #fff8f3;
 }

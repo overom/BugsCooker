@@ -4,7 +4,8 @@
   background-color: #fff8f2;
 }
 
-#blog p {
+#blog,
+#avis p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "PT Serif Caption", Arial, Helvetica, sans-serif;
@@ -12,7 +13,8 @@
   font-weight: lighter;
 }
 
-#blog h3 {
+#blog,
+#avis h3 {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "Fuji", Arial, Helvetica, sans-serif;

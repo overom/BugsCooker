@@ -11,10 +11,10 @@ p {
 
 @font-face {
   font-family: "Fuji";
-  src: url("Fuji-Regular.otf");
-  src: url("Fuji-Light.otf");
-  src: url("Fuji-Bold.otf");
-  src: url("Fuji-Medium.otf");
+  src: url("fonts/fuji/Fuji-Regular.otf");
+  src: url("fonts/fuji/Fuji-Light.otf");
+  src: url("fonts/fuji/Fuji-Bold.otf");
+  src: url("fonts/fuji/Fuji-Medium.otf");
 }
 
 h2 {

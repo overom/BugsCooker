@@ -1,0 +1,34 @@
+@media all and (max-width: 991px) {
+  .btnReserv {
+    left: inherit !important;
+    right: 90px !important;
+  }
+}
+
+.btnReserv {
+  position: absolute;
+  left: 90%;
+}
+
+.placementBouton {
+  margin-right: 150px;
+}
+/*
+.btnReserv {
+  position: absolute;
+  left: 52%;
+}
+*/
+
+/*
+@media all and (max-width: 991px) {
+  .btnReserv {
+    left: inherit !important;
+    right: 90px !important;
+  }
+}
+.btnReserv {
+  position: absolute;
+  left: 90%;
+}
+*/

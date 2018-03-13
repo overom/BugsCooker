@@ -404,7 +404,7 @@ hr {
 /*social media icons - CSS animation */
 
 section#contact ul a,
-i {
+#socialButton ul li a {
   display: inline-block;
   width: 128px;
   height: 128px;
@@ -415,17 +415,17 @@ i {
 }
 
 a.fb,
-.fa-facebook {
+#socialButton ul li a.tw {
   background: url(images/social_media.png) -256px top;
 }
 
 a.tw,
-.fa-twitter {
+#socialButton ul li a.fb {
   background: url(images/social_media.png) -512px top;
 }
 
 a.ytube,
-.fa-youtube {
+#socialButton ul li a.ytube {
   background: url(images/social_media.png) -640px top;
 }
 
@@ -434,17 +434,17 @@ a.toque {
 }
 
 section#contact li:hover a.fb,
-.fa-facebook:hover {
+#socialButton ul li a.tw:hover {
   background: url(images/social_media.png) -256px bottom;
 }
 
 section#contact li:hover a.tw,
-.fa-twitter:hover {
+#socialButton ul li a.fb:hover {
   background: url(images/social_media.png) -512px bottom;
 }
 
 section#contact li:hover a.ytube,
-.fa-youtube:hover {
+#socialButton ul li a.ytube:hover {
   background: url(images/social_media.png) -640px bottom;
 }
 
@@ -454,20 +454,20 @@ section#contact li:hover a.toque {
 
 @media (max-width: 991px) {
   section#contact li a.fb,
-  .fa-facebook {
+  #socialButton ul li a.fb {
     background: url(images/social_media.png) -256px bottom;
   }
 }
 
 @media (max-width: 991px) {
   section#contact li a.tw,
-  .fa-twitter {
+  #socialButton ul li a.tw {
     background: url(images/social_media.png) -512px bottom;
   }
 }
 @media (max-width: 991px) {
   section#contact li a.ytube,
-  .fa-youtube {
+  #socialButton ul li a.ytube {
     background: url(images/social_media.png) -640px bottom;
   }
 }
@@ -481,6 +481,9 @@ section#contact li:hover a.toque {
   color: #fff8f3;
 }
 
+.font-50 {
+  font-size: 25px;
+}
 /* BLOG */
 
 #blog {

@@ -23,12 +23,12 @@ h2 {
 
 /* MENU */
 
-.container-fluid {
+#menu .container-fluid {
   padding: 0;
   margin: 0;
 }
 
-.figure {
+#menu .figure {
   position: relative;
   display: block;
   padding: 0;
@@ -37,12 +37,12 @@ h2 {
   border-bottom: #554f48 solid 1px;
 }
 
-.figure .col-12 {
+#menu .figure .col-12 {
   margin: 0;
   padding: 0;
 }
 
-.figure h2 {
+#menu .figure h2 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -52,18 +52,18 @@ h2 {
   color: #554f48;
 }
 
-.figure:hover img + h2 {
+#menu .figure:hover img + h2 {
   visibility: visible;
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
 
-.figure img {
+#menu .figure img {
   opacity: 1;
   -webkit-transition: 0.4s ease-in-out;
   transition: 0.4s ease-in-out;
 }
 
-.figure:hover img {
+#menu .figure:hover img {
   opacity: 0.3;
 }

@@ -1,0 +1,211 @@
+#Restaurant .card-body {
+  border-radius: 0px;
+  border-width: 0px;
+}
+.Restaurant__text--title--border {
+  border: 1px solid #554f48;
+  border-radius: 0;
+}
+
+.Restaurant__text--title--secondBorder {
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 0;
+}
+
+.Restaurant__text--title--dephasage {
+  position: relative;
+  top: -45px;
+}
+
+.Restaurant__hidden {
+  opacity: 0;
+}
+
+.Restaurant__background1 {
+  background-color: rgb(200, 200, 200);
+}
+
+.Restaurant__background2 {
+  background-color: rgb(10, 10, 10);
+}
+
+.Restaurant__background3 {
+  background-color: rgb(150, 150, 150);
+}
+
+.Restaurant__galleryZoom {
+  /* width: 100%; */
+  /* float: left; */
+  /* display : flex;
+  flex-wrap: wrap; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Restaurant__galleryZoom--display {
+  display: none;
+  position: absolute;
+  margin: auto;
+  color: white;
+  font-weight: bold;
+}
+
+.Restaurant__gallery--smallImage {
+  width: 100%;
+  /* height: auto; */
+  /* width: 250px; */
+}
+
+.Restaurant__gallery--smallImage:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+.Restaurant__gallery figure {
+  /* display: block; */
+  /* float: left; */
+  margin: 10px 5px 5px 0;
+  padding: 0 0 0 0;
+  /* width: 150px; */
+}
+
+.Restaurant__gallery figcaption {
+  display: none;
+}
+
+.Restaurant__text {
+  font-size: 1.5em;
+  /* margin: 20px 5px 0px 5px; */
+  padding-top: 20px;
+}
+
+.Restaurant__sectionDuGerant--padding {
+  padding: 10px 10px 10px 10px;
+}
+
+.Restaurant__sectionDuGerant {
+  border: 1px solid rgb(150, 150, 150);
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.Restaurant__textDuGerant {
+  font-size: 1.5em;
+  margin: 0px 10px 10px 10px;
+}
+
+.Restaurant__text--title {
+  font-size: 2em;
+  margin: 2px 2px 2px 2px;
+  padding: 10px 10px 10px 10px;
+}
+
+.Restaurant__text--sign {
+  text-align: right;
+}
+
+.Restaurant__text--fadeInUp {
+  -webkit-animation-name: Restaurant__text--fadeInUp;
+  animation-name: Restaurant__text--fadeInUp;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
+.Restaurant__text--fadeInRight {
+  -webkit-animation-name: Restaurant__text--fadeInRight;
+  animation-name: Restaurant__text--fadeInRight;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
+.Restaurant__text--fadeInLeft {
+  -webkit-animation-name: Restaurant__text--fadeInLeft;
+  animation-name: Restaurant__text--fadeInLeft;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+}
+
+@-webkit-keyframes Restaurant__text--fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes Restaurant__text--fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes Restaurant__text--fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes Restaurant__text--fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@-webkit-keyframes Restaurant__text--fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes Restaurant__text--fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}

@@ -15,8 +15,13 @@
 
 .reservation__page--hidden {
   opacity: 0;
+  display: none;
 }
 
+.reservation__SpecialSeptOuPlus--hidden {
+  opacity: 0;
+  display: none;
+}
 /* .reservation__submit--border {
   border: 1px solid #554f48;
   border-radius: 0;

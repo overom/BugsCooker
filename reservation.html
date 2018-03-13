@@ -17,9 +17,16 @@
 -->
 
 <body>
-    <p>A popup datepicker
-        <input type="text" id="popupDatepicker">
-    </p>
+
+    <!-- TO DO : CET HEADER A SUPPRIMER LORS DE L'UNIFICATION -->
+    <header>
+        <div class="btnReserv">
+            <a class="btn btn-md btn-outline-secondary" href="#" role="button">Réservation</a>
+        </div>
+    </header>
+
+
+
     <section id="reservation">
 
         <div class="reservation__page reservation__page--hidden">
@@ -44,32 +51,51 @@
                         <div class="card card-header">
                             <form>
                                 <div class="form-group">
-                                    <label for="exampleFormControlInput1">Email address</label>
-                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                                    <label for="votreNom">Votre nom</label>
+                                    <input required type="text" class="form-control" id="votreNom" placeholder="ex : Jean Dupont">
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleFormControlSelect1">Example select</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
+                                    <label for="Tel">Votre numéro de téléphone</label>
+                                    <input type="text" name="Tel" class="form-control" id="Tel" placeholder="06 XX XX XX XX" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="nombreDePersonnes">Nombre de personnes</label>
+                                    <select class="form-control" id="nombreDePersonnes">
+                                        <option class="nombreNonChoisit" selected="selected">choisir...</option>
+                                        <option class="nombreNormal">1</option>
+                                        <option class="nombreNormal">2</option>
+                                        <option class="nombreNormal">3</option>
+                                        <option class="nombreNormal">4</option>
+                                        <option class="nombreNormal">5</option>
+                                        <option class="nombreNormal">6</option>
+                                        <option class="nombreSpecial">7 ou plus (précisez)</option>
                                     </select>
                                 </div>
-                                <div class="form-group">
-                                    <label for="exampleFormControlSelect2">Example multiple select</label>
-                                    <select multiple class="form-control" id="exampleFormControlSelect2">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                        <option>5</option>
-                                    </select>
+                                <div class="reservation__SpecialSeptOuPlus reservation__SpecialSeptOuPlus--hidden">
+                                    <div class="form-group">
+                                        <label for="nombreDePersonnesSpecialSeptOuPlus">Précisez le nombre de personnes :</label>
+                                        <input type="text" class="form-control" id="SpecialSeptOuPlus" placeholder="ex : 10">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="messageSpecial">Pour quelle occasion?</label>
+                                        <br/>
+                                        <input type="radio" name="name" id="Anniversaire" value="Anniversaire" class="Anniversaire">
+                                        <label for="Anniversaire">Anniversaire</label>
+                                        <input type="radio" name="name" id="MariageFiançaille" value="MariageFiançaille" class="MariageFiançaille">
+                                        <label for="Mariage-Fiançaille">Mariage/fiançaille</label>
+                                        <input type="radio" name="name" id="SoireeEntreprise" value="SoireeEntreprise" class="SoireeEntreprise">
+                                        <label for="SoireeEntreprise">Soirée d'entreprise</label>
+                                        <input type="radio" name="name" id="Seminaire" value="Seminaire" class="Seminaire">
+                                        <label for="Seminaire">Séminaire</label>
+                                        <input type="radio" name="name" id="Autre" value="Autre" class="Autre">
+                                        <label for="Autre">Autre</label>
+                                        <input type="radio" name="name" id="Aucun" value="Aucun" class="Aucun">
+                                        <label for="Aucun">Aucun</label>
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="exampleFormControlTextarea1">Example textarea</label>
-                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <label for="votreMessage">Votre Message (facultatif - maximum 100 mots)</label>
+                                    <textarea class="form-control" id="votreMessage" rows="3"></textarea>
                                 </div>
                             </form>
                         </div>
@@ -91,105 +117,6 @@
         </div>
 
     </section>
-
-    <div class="btnReserv">
-        <a class="btn btn-md btn-outline-secondary" href="#" role="button">Réservation</a>
-    </div>
-
-    <p>Et nisi aliquip laborum voluptate ex proident laboris ea. Non pariatur laborum excepteur in id velit. Eu sit Lorem elit
-        cillum velit reprehenderit. Occaecat ex eu nisi velit aliqua eiusmod Lorem veniam magna quis. Consequat incididunt
-        aliqua voluptate ea tempor veniam minim labore. Fugiat magna laboris mollit id. Ipsum anim veniam voluptate non elit
-        est ad aute amet ipsum fugiat cupidatat dolor. Irure veniam minim ea commodo ut eu sint tempor duis magna aute enim
-        reprehenderit. Dolor eiusmod labore ex laboris incididunt aliqua eu Lorem. Elit irure do laborum adipisicing do dolor
-        sit mollit adipisicing excepteur nisi voluptate. Veniam reprehenderit occaecat irure eu id eu Lorem et sit eiusmod
-        pariatur duis proident incididunt. Fugiat in officia nulla culpa. Irure officia sunt qui magna sint do esse non esse
-        cillum laboris. Excepteur ut ex sit mollit ut eu magna labore amet commodo sint est non deserunt. Commodo mollit
-        non ipsum ullamco labore. Eiusmod officia cupidatat ullamco cillum irure aliqua dolore fugiat. Do nulla et cupidatat
-        mollit. Deserunt ipsum anim non mollit mollit anim aliquip non voluptate mollit consectetur. Consequat exercitation
-        do esse veniam id qui anim veniam do aliqua ex. Anim quis excepteur enim labore deserunt nulla sit adipisicing nulla.
-        Ad voluptate minim occaecat cillum nostrud. Elit aliquip mollit pariatur nulla eu. Officia officia est Lorem adipisicing
-        officia enim duis et non magna aliquip elit amet. Deserunt eu ad dolore eiusmod ut et irure nulla reprehenderit est
-        anim anim ipsum nostrud. Nisi nisi sint non non ex. Nostrud esse ea irure officia. Ut ut nulla et non magna esse
-        do nisi enim laborum velit. Ullamco do exercitation cupidatat esse aliquip labore excepteur deserunt amet ad elit
-        id mollit laborum. Qui in aliquip ipsum veniam officia aliqua elit eiusmod deserunt labore consectetur. Nulla aliquip
-        dolore nulla nostrud laborum fugiat velit incididunt sunt elit dolore. Aliqua ea velit aute deserunt sint consequat
-        Lorem sint est do. Lorem enim fugiat elit aliqua ad laborum sit officia veniam et sit do do. Id commodo ullamco laborum
-        id nostrud commodo quis culpa Lorem. Sint irure culpa proident et eu sint ea excepteur aliqua nisi exercitation anim
-        tempor. Qui sint id eu deserunt velit. Incididunt in est sit cillum voluptate consectetur exercitation occaecat reprehenderit
-        cillum eiusmod. Excepteur ipsum culpa pariatur ullamco deserunt. Voluptate voluptate et voluptate do laborum ut eu
-        proident nisi proident reprehenderit nisi. Id enim pariatur ad eu nostrud duis aliqua nisi commodo laborum minim
-        occaecat veniam. Culpa esse ex culpa in amet. Ut excepteur ullamco culpa nisi in labore duis irure non elit laboris
-        Lorem nisi. Sint ad ullamco et qui reprehenderit est cillum. Proident consequat occaecat id tempor fugiat eu nulla
-        velit commodo laborum exercitation nostrud id fugiat. Commodo adipisicing voluptate ullamco consequat nulla velit
-        eiusmod ipsum sit fugiat qui. Id fugiat veniam minim veniam ut voluptate laboris voluptate incididunt elit veniam
-        culpa. Enim commodo nisi ex enim duis nulla esse elit cupidatat exercitation qui anim ad. Eu est consequat fugiat
-        anim id irure velit enim tempor mollit ea exercitation consectetur esse. Magna minim quis aliquip eiusmod nostrud
-        aliqua veniam exercitation nostrud esse aliqua. Quis ea ad ut exercitation officia aute nulla ex mollit. Velit irure
-        consectetur aute nisi ad officia dolor. Non cillum aliquip exercitation ut nostrud consequat nulla dolore voluptate
-        veniam adipisicing aliqua.</p>
-    <p>Et nisi aliquip laborum voluptate ex proident laboris ea. Non pariatur laborum excepteur in id velit. Eu sit Lorem elit
-        cillum velit reprehenderit. Occaecat ex eu nisi velit aliqua eiusmod Lorem veniam magna quis. Consequat incididunt
-        aliqua voluptate ea tempor veniam minim labore. Fugiat magna laboris mollit id. Ipsum anim veniam voluptate non elit
-        est ad aute amet ipsum fugiat cupidatat dolor. Irure veniam minim ea commodo ut eu sint tempor duis magna aute enim
-        reprehenderit. Dolor eiusmod labore ex laboris incididunt aliqua eu Lorem. Elit irure do laborum adipisicing do dolor
-        sit mollit adipisicing excepteur nisi voluptate. Veniam reprehenderit occaecat irure eu id eu Lorem et sit eiusmod
-        pariatur duis proident incididunt. Fugiat in officia nulla culpa. Irure officia sunt qui magna sint do esse non esse
-        cillum laboris. Excepteur ut ex sit mollit ut eu magna labore amet commodo sint est non deserunt. Commodo mollit
-        non ipsum ullamco labore. Eiusmod officia cupidatat ullamco cillum irure aliqua dolore fugiat. Do nulla et cupidatat
-        mollit. Deserunt ipsum anim non mollit mollit anim aliquip non voluptate mollit consectetur. Consequat exercitation
-        do esse veniam id qui anim veniam do aliqua ex. Anim quis excepteur enim labore deserunt nulla sit adipisicing nulla.
-        Ad voluptate minim occaecat cillum nostrud. Elit aliquip mollit pariatur nulla eu. Officia officia est Lorem adipisicing
-        officia enim duis et non magna aliquip elit amet. Deserunt eu ad dolore eiusmod ut et irure nulla reprehenderit est
-        anim anim ipsum nostrud. Nisi nisi sint non non ex. Nostrud esse ea irure officia. Ut ut nulla et non magna esse
-        do nisi enim laborum velit. Ullamco do exercitation cupidatat esse aliquip labore excepteur deserunt amet ad elit
-        id mollit laborum. Qui in aliquip ipsum veniam officia aliqua elit eiusmod deserunt labore consectetur. Nulla aliquip
-        dolore nulla nostrud laborum fugiat velit incididunt sunt elit dolore. Aliqua ea velit aute deserunt sint consequat
-        Lorem sint est do. Lorem enim fugiat elit aliqua ad laborum sit officia veniam et sit do do. Id commodo ullamco laborum
-        id nostrud commodo quis culpa Lorem. Sint irure culpa proident et eu sint ea excepteur aliqua nisi exercitation anim
-        tempor. Qui sint id eu deserunt velit. Incididunt in est sit cillum voluptate consectetur exercitation occaecat reprehenderit
-        cillum eiusmod. Excepteur ipsum culpa pariatur ullamco deserunt. Voluptate voluptate et voluptate do laborum ut eu
-        proident nisi proident reprehenderit nisi. Id enim pariatur ad eu nostrud duis aliqua nisi commodo laborum minim
-        occaecat veniam. Culpa esse ex culpa in amet. Ut excepteur ullamco culpa nisi in labore duis irure non elit laboris
-        Lorem nisi. Sint ad ullamco et qui reprehenderit est cillum. Proident consequat occaecat id tempor fugiat eu nulla
-        velit commodo laborum exercitation nostrud id fugiat. Commodo adipisicing voluptate ullamco consequat nulla velit
-        eiusmod ipsum sit fugiat qui. Id fugiat veniam minim veniam ut voluptate laboris voluptate incididunt elit veniam
-        culpa. Enim commodo nisi ex enim duis nulla esse elit cupidatat exercitation qui anim ad. Eu est consequat fugiat
-        anim id irure velit enim tempor mollit ea exercitation consectetur esse. Magna minim quis aliquip eiusmod nostrud
-        aliqua veniam exercitation nostrud esse aliqua. Quis ea ad ut exercitation officia aute nulla ex mollit. Velit irure
-        consectetur aute nisi ad officia dolor. Non cillum aliquip exercitation ut nostrud consequat nulla dolore voluptate
-        veniam adipisicing aliqua.</p>
-    <p>Et nisi aliquip laborum voluptate ex proident laboris ea. Non pariatur laborum excepteur in id velit. Eu sit Lorem elit
-        cillum velit reprehenderit. Occaecat ex eu nisi velit aliqua eiusmod Lorem veniam magna quis. Consequat incididunt
-        aliqua voluptate ea tempor veniam minim labore. Fugiat magna laboris mollit id. Ipsum anim veniam voluptate non elit
-        est ad aute amet ipsum fugiat cupidatat dolor. Irure veniam minim ea commodo ut eu sint tempor duis magna aute enim
-        reprehenderit. Dolor eiusmod labore ex laboris incididunt aliqua eu Lorem. Elit irure do laborum adipisicing do dolor
-        sit mollit adipisicing excepteur nisi voluptate. Veniam reprehenderit occaecat irure eu id eu Lorem et sit eiusmod
-        pariatur duis proident incididunt. Fugiat in officia nulla culpa. Irure officia sunt qui magna sint do esse non esse
-        cillum laboris. Excepteur ut ex sit mollit ut eu magna labore amet commodo sint est non deserunt. Commodo mollit
-        non ipsum ullamco labore. Eiusmod officia cupidatat ullamco cillum irure aliqua dolore fugiat. Do nulla et cupidatat
-        mollit. Deserunt ipsum anim non mollit mollit anim aliquip non voluptate mollit consectetur. Consequat exercitation
-        do esse veniam id qui anim veniam do aliqua ex. Anim quis excepteur enim labore deserunt nulla sit adipisicing nulla.
-        Ad voluptate minim occaecat cillum nostrud. Elit aliquip mollit pariatur nulla eu. Officia officia est Lorem adipisicing
-        officia enim duis et non magna aliquip elit amet. Deserunt eu ad dolore eiusmod ut et irure nulla reprehenderit est
-        anim anim ipsum nostrud. Nisi nisi sint non non ex. Nostrud esse ea irure officia. Ut ut nulla et non magna esse
-        do nisi enim laborum velit. Ullamco do exercitation cupidatat esse aliquip labore excepteur deserunt amet ad elit
-        id mollit laborum. Qui in aliquip ipsum veniam officia aliqua elit eiusmod deserunt labore consectetur. Nulla aliquip
-        dolore nulla nostrud laborum fugiat velit incididunt sunt elit dolore. Aliqua ea velit aute deserunt sint consequat
-        Lorem sint est do. Lorem enim fugiat elit aliqua ad laborum sit officia veniam et sit do do. Id commodo ullamco laborum
-        id nostrud commodo quis culpa Lorem. Sint irure culpa proident et eu sint ea excepteur aliqua nisi exercitation anim
-        tempor. Qui sint id eu deserunt velit. Incididunt in est sit cillum voluptate consectetur exercitation occaecat reprehenderit
-        cillum eiusmod. Excepteur ipsum culpa pariatur ullamco deserunt. Voluptate voluptate et voluptate do laborum ut eu
-        proident nisi proident reprehenderit nisi. Id enim pariatur ad eu nostrud duis aliqua nisi commodo laborum minim
-        occaecat veniam. Culpa esse ex culpa in amet. Ut excepteur ullamco culpa nisi in labore duis irure non elit laboris
-        Lorem nisi. Sint ad ullamco et qui reprehenderit est cillum. Proident consequat occaecat id tempor fugiat eu nulla
-        velit commodo laborum exercitation nostrud id fugiat. Commodo adipisicing voluptate ullamco consequat nulla velit
-        eiusmod ipsum sit fugiat qui. Id fugiat veniam minim veniam ut voluptate laboris voluptate incididunt elit veniam
-        culpa. Enim commodo nisi ex enim duis nulla esse elit cupidatat exercitation qui anim ad. Eu est consequat fugiat
-        anim id irure velit enim tempor mollit ea exercitation consectetur esse. Magna minim quis aliquip eiusmod nostrud
-        aliqua veniam exercitation nostrud esse aliqua. Quis ea ad ut exercitation officia aute nulla ex mollit. Velit irure
-        consectetur aute nisi ad officia dolor. Non cillum aliquip exercitation ut nostrud consequat nulla dolore voluptate
-        veniam adipisicing aliqua.</p>
-
 
 
 

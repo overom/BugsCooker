@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Fuji";
+  src: url("/Users/roxanequatrecentcinquanteetun/Desktop/Wild/bug-cooker/BugsCooker/typos/Fuji-Regular.otf");
+}
+
+h1,
+p {
+  font-family: "Fuji";
+}
+
+/*--color: #554f48;--*/

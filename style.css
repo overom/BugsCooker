@@ -302,6 +302,10 @@
   opacity: 0.3;
 }
 
+#menu .col-12 {
+  padding: 0;
+}
+
 /* contact */
 footer {
   background-color: #000;

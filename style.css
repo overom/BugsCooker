@@ -1,9 +1,35 @@
 /* NAVBAR */
 nav {
   z-index: 1111;
+  background-color: #f7eae0 !important;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
+
+.noMarginNoPadding {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.marginRight-10 {
+  margin-right: 10px;
+}
+
+.marginLeft10 {
+  margin-left: 10px;
+}
+
 .hrNavBar {
-  border: 2px solid #554f48;
+  border: 1px solid #554f48;
+}
+
+.hrNavBarMenu {
+  border: 1px solid #554f48;
+}
+
+.hrNavBarSmall {
+  border: 1px solid #554f48;
+  width: 100px;
 }
 
 @media all and (max-width: 991px) {
@@ -18,6 +44,7 @@ nav {
     margin-top: 1px;
   }
 }
+
 .btnReserv {
   position: absolute;
   top: 15px;
@@ -55,22 +82,18 @@ nav {
 }
 
 a.fb,
-#socialButton ul li a.tw {
-  background: url(images/social_media.png) -256px top;
+#socialButtonNavBar ul li a.tw {
+  background: url(images/social_mediaV2.png) -256px top;
 }
 
 a.tw,
-#socialButton ul li a.fb {
-  background: url(images/social_media.png) -512px top;
+#socialButtonNavBar ul li a.fb {
+  background: url(images/social_mediaV2.png) -512px top;
 }
 
 a.ytube,
-#socialButton ul li a.ytube {
-  background: url(images/social_media.png) -640px top;
-}
-
-a.toque {
-  background: url(images/toques-blanches-nb.png) no-repeat;
+#socialButtonNavBar ul li a.ytube {
+  background: url(images/social_mediaV2.png) -640px top;
 }
 
 /* @media (max-width: 991px) { .navBarCentrage { text-align: center; } } */ /* .btnReserv
@@ -348,11 +371,12 @@ footer {
 .font-grey {
   color: #554f49;
 }
-
+/*
 hr {
   border: 0.5px solid #fff8f3;
   max-width: 20%;
 }
+*/
 
 /* Titre de la page : contact */
 

@@ -35,6 +35,14 @@ nav {
   width: 20px;
 }
 
+.hrMenu {
+  border: 1px solid #554f48;
+  position: absolute;
+  right: 0%;
+  width: 500px;
+  margin: 0;
+}
+
 header .btnReserv {
   position: absolute;
   top: 10px;

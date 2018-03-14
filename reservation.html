@@ -53,6 +53,16 @@
                             <form>
                                 <div class="row">
                                     <div class="col-12 col-sm-6">
+                                        <label for="votreNom">Votre nom</label>
+                                        <input required type="text" class="reservation__input--width" id="votreNom" placeholder="ex : Jean Dupont">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <label for="Tel">Votre téléphone</label>
+                                        <input type="text" name="Tel" class="reservation__input--width" id="Tel" placeholder="06 XX XX XX XX" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
 
                                         <script src="date-picker-v5/js/datepicker.js"></script>
                                         <label for="dp-1">Date de réservation</label>
@@ -86,49 +96,42 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-12 col-sm-6">
-                                        <label for="votreNom">Votre nom</label>
-                                        <input required type="text" class="reservation__input--width" id="votreNom" placeholder="ex : Jean Dupont">
-                                    </div>
-                                    <div class="col-12 col-sm-6">
-                                        <label for="Tel">Votre téléphone</label>
-                                        <input type="text" name="Tel" class="reservation__input--width" id="Tel" placeholder="06 XX XX XX XX" />
+                                    <div class="col-12">
+                                        <label for="nombreDePersonnes">Nombre de personnes</label>
+                                        <input type="number" name="nombreDePersonnes" class="reservation__input--width--uneLigne" id="nombreDePersonnes" value=1>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="nombreDePersonnes">Nombre de personnes</label>
-                                    <select class="reservation__input--width--uneLigne" id="nombreDePersonnes">
-                                        <option class="nombreNonChoisit" selected="selected">choisir...</option>
-                                        <option class="nombreNormal">1</option>
-                                        <option class="nombreNormal">2</option>
-                                        <option class="nombreNormal">3</option>
-                                        <option class="nombreNormal">4</option>
-                                        <option class="nombreNormal">5</option>
-                                        <option class="nombreNormal">6</option>
-                                        <option class="nombreSpecial">7 ou plus (précisez)</option>
-                                    </select>
-                                </div>
-                                <div class="reservation__SpecialSeptOuPlus reservation__SpecialSeptOuPlus--hidden">
-                                    <div class="form-group">
-                                        <label for="nombreDePersonnesSpecialSeptOuPlus">Précisez le nombre de personnes :</label>
-                                        <input type="number" value="10" class="reservation__input--width--uneLigne" id="SpecialSeptOuPlus" placeholder="ex : 10">
-                                    </div>
-                                    <div class="form-group">
+                                <div class="row">
+                                    <div class="col-12">
                                         <label for="messageSpecial">Pour quelle occasion?</label>
-                                        <br/>
-                                        <input type="radio" name="name" id="Anniversaire" value="Anniversaire" class="Anniversaire">
-                                        <label for="Anniversaire">Anniversaire</label>
-                                        <input type="radio" name="name" id="MariageFiançaille" value="MariageFiançaille" class="MariageFiançaille">
-                                        <label for="Mariage-Fiançaille">Mariage/fiançaille</label>
-                                        <input type="radio" name="name" id="SoireeEntreprise" value="SoireeEntreprise" class="SoireeEntreprise">
-                                        <label for="SoireeEntreprise">Soirée d'entreprise</label>
-                                        <input type="radio" name="name" id="Seminaire" value="Seminaire" class="Seminaire">
-                                        <label for="Seminaire">Séminaire</label>
-                                        <input type="radio" name="name" id="Autre" value="Autre" class="Autre">
-                                        <label for="Autre">Autre</label>
-                                        <input type="radio" name="name" id="Aucun" value="Aucun" class="Aucun">
-                                        <label for="Aucun">Aucun</label>
                                     </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="Anniversaire" value="Anniversaire" class="reservation__occasion">
+                                        <label for="Anniversaire" class="reservation__occasion">Anniversaire</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="MariageFiançaille" value="MariageFiançaille" class="reservation__occasion">
+                                        <label for="Mariage-Fiançaille" class="reservation__occasion">Mariage/fiançaille</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="SoireeEntreprise" value="SoireeEntreprise" class="reservation__occasion">
+                                        <label for="SoireeEntreprise" class="reservation__occasion">Soirée d'entreprise</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="Seminaire" value="Seminaire" class="reservation__occasion">
+                                        <label for="Seminaire" class="reservation__occasion">Séminaire</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="Autre" value="Autre" class="reservation__occasion">
+                                        <label for="Autre" class="reservation__occasion">Autre</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="Aucun" value="Aucun" class="reservation__occasion">
+                                        <label for="Aucun" class="reservation__occasion">Aucun</label>
+                                    </div>
+
                                 </div>
                                 <div class="form-group">
                                     <label for="votreMessage">Un Message? (facultatif - max 100 mots)</label>

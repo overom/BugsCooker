@@ -648,6 +648,138 @@
 
 
 
+    <!-- RESERVATION -->
+    <section id="reservation">
+
+        <div class="reservation__page reservation__page--hidden">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="d-flex ml-auto p-2">
+                        <span class="btn btn-dark btnReserv">X</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1>Réservation</h1>
+                        <p>Sit aute exercitation sint voluptate veniam occaecat proident laborum. Nisi do esse anim sit laboris
+                            labore voluptate esse. Laborum eu aute consequat ipsum fugiat aliquip occaecat dolor sunt in
+                            amet.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card card-header">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <label for="votreNom">Votre nom</label>
+                                        <input required type="text" class="reservation__input--width" id="votreNom" placeholder="ex : Jean Dupont">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <label for="Tel">Votre téléphone</label>
+                                        <input type="text" name="Tel" class="reservation__input--width" id="Tel" placeholder="06 XX XX XX XX" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+
+                                        <script src="date-picker-v5/js/datepicker.js"></script>
+                                        <label for="dp-1">Date de réservation</label>
+                                        <input type="text" class="w16em reservation__input--width" id="dp-1" name="dp-1" placeholder="JJ/MM/AAAA" />
+                                        <script type="text/javascript">
+                                            // <![CDATA[     
+                                            let opts = {
+                                                // Attach input with an id of "dp-1" and give it a "d-sl-m-sl-Y" date format (e.g. 13/03/1990)                      
+                                                formElements: { "dp-1": "d-sl-m-sl-Y" }
+                                            };
+                                            datePickerController.createDatePicker(opts);
+                                            // ]]>
+                                        </script>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <label for="heure">Heure d'arrivée</label>
+                                        <select class="reservation__input--width" id="heure">
+                                            <option selected="selected">choisir...</option>
+                                            <option>12h00-12h30</option>
+                                            <option>12h30-13h00</option>
+                                            <option>13h00-13h30</option>
+                                            <option>13h30-14h00</option>
+                                            <option>19h00-19h30</option>
+                                            <option>19h30-20h00</option>
+                                            <option>20h00-20h30</option>
+                                            <option>20h30-21h00</option>
+                                            <option>21h00-21h30</option>
+                                            <option>21h30-22h00</option>
+                                            <option>22h00-22h30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="nombreDePersonnes">Nombre de personnes</label>
+                                        <input type="number" name="nombreDePersonnes" class="reservation__input--width--uneLigne" id="nombreDePersonnes" value=1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="messageSpecial">Pour quelle occasion?</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="Anniversaire" value="Anniversaire" class="reservation__occasion">
+                                        <label for="Anniversaire" class="reservation__occasion">Anniversaire</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="MariageFiançaille" value="MariageFiançaille" class="reservation__occasion">
+                                        <label for="Mariage-Fiançaille" class="reservation__occasion">Mariage/fiançaille</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="SoireeEntreprise" value="SoireeEntreprise" class="reservation__occasion">
+                                        <label for="SoireeEntreprise" class="reservation__occasion">Soirée d'entreprise</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="Seminaire" value="Seminaire" class="reservation__occasion">
+                                        <label for="Seminaire" class="reservation__occasion">Séminaire</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="Autre" value="Autre" class="reservation__occasion">
+                                        <label for="Autre" class="reservation__occasion">Autre</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="Aucun" value="Aucun" class="reservation__occasion">
+                                        <label for="Aucun" class="reservation__occasion">Aucun</label>
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="votreMessage">Un Message? (facultatif - max 100 mots)</label>
+                                    <textarea class="reservation__input--width--uneLigne" id="votreMessage" rows="3"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 text-center reservation__submit--border">
+                        <div class="reservation__submit--border">
+                            <div class="reservation__submit--secondBorder">
+                                <button type="button" class="btn btn-danger reservation__submit">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
     <!-- 
     ********************************************************
     ** Plugin photoswipe à placer juste avant le </body>  **

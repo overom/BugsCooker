@@ -506,6 +506,13 @@ section#contact li:hover a.toque {
   font-weight: bold;
 }
 
+#blog .card-body img {
+  border: solid 1px rgba(0, 0, 0, 0.25);
+}
+#blog .card-body p {
+  padding-top: 20px;
+}
+
 #avis .card {
   border: 0px;
   background-color: #554f48;

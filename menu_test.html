@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Menu</title>
+    <script src="scriptmenutest.js"></script>
     <link rel="stylesheet" href="stylemenutest.css">
 </head>
 
@@ -17,23 +18,26 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img src="images/001.jpg" class="img-fluid" alt="Responsive image">
-                        <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                        <div id="click-01">
+                            <img src="images/001.jpg" class="img-fluid" alt="Responsive image">
+                            <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                        </div>
                     </div>
                 </div>
             </div>
         </figure>
-        <div class="bloc-menu-marron">
+        <div id="blocMarron">
         </div>
         <figure class="figure">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img src="images/002.jpg" class="img-fluid" alt="Responsive image">
-                        <h2> ASTICOTS CREME CHAMPIGNONS </h2>
+                        <div class="click-02">
+                            <img src="images/002.jpg" class="img-fluid" alt="Responsive image">
+                            <h2> ASTICOTS CREME CHAMPIGNONS </h2>
+                        </div>
                     </div>
                 </div>
-            </div>
         </figure>
         <figure class="figure">
             <div class="container-fluid">
@@ -56,6 +60,9 @@
             </div>
         </figure>
     </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scriptmenutest.js"></script>
 </body>
 
 </html>

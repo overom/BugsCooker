@@ -2,6 +2,28 @@
   margin: 10px 0 10px 0;
 }
 
+.reservation__input--width {
+  width: 90%;
+}
+
+#reservation label {
+  margin-top: 5px;
+}
+
+.reservation__input--width--uneLigne {
+  width: 90%;
+}
+@media (min-width: 576px) {
+  .reservation__input--width--uneLigne {
+    width: 95%;
+  }
+}
+
+@media (min-width: 576px) {
+  .reservation__occasion {
+    width: auto;
+  }
+}
 .reservation__page {
   position: fixed;
   left: 10vw;

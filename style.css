@@ -267,6 +267,12 @@
 
 /* Menu */
 
+#blocMarron {
+  width: 400px;
+  height: 200px;
+  background-color: black;
+}
+
 #menu .figure {
   position: relative;
   display: block;
@@ -277,6 +283,9 @@
 }
 
 #menu .figure h2 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fuji", Arial, Helvetica, sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;

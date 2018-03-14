@@ -1,56 +1,45 @@
+/* NAVBAR */
+nav {
+  z-index: 1111;
+}
 @media all and (max-width: 991px) {
   .btnReserv {
     left: inherit !important;
     right: 90px !important;
   }
+  #navbarSupportedContent ul li a {
+    font-size: 150%;
+  }
+  #navbarSupportedContent ul li {
+    margin-top: 30px;
+  }
 }
-
 .btnReserv {
   position: absolute;
   top: 15px;
   right: 2%;
 }
-
-.placementBouton {
-  margin-right: 150px;
+@media all and (min-width: 991px) {
+  .placementBouton {
+    margin-right: 150px;
+  }
+  #navbarSupportedContent ul li {
+    margin-right: 20px;
+    height: 50px;
+  }
 }
 #navbarSupportedContent ul {
   align-items: center;
 }
-
-#navbarSupportedContent ul li {
-  margin-right: 20px;
-  height: 50px;
-}
-
 #navbarSupportedContent ul li a {
   color: #554f49;
 }
-
 #navbarSupportedContent ul li a:hover {
   border-bottom: 4px solid #554f49;
   padding-bottom: 4px;
-}
-
-/*
-.btnReserv {
-  position: absolute;
-  left: 52%;
-}
-*/
-
-/*
-@media all and (max-width: 991px) {
-  .btnReserv {
-    left: inherit !important;
-    right: 90px !important;
-  }
-}
-.btnReserv {
-  position: absolute;
-  left: 90%;
-}
-*/
+} /* @media (max-width: 991px) { .navBarCentrage { text-align: center; } } */ /* .btnReserv
+{ position: absolute; left: 52%; } */ /* @media all and (max-width: 991px) { .btnReserv { left: inherit !important; right:
+90px !important; } } .btnReserv { position: absolute; left: 90%; } */
 
 /* Restaurant */
 #Restaurant .card-body {

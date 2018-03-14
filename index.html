@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="photoswipe/default-skin.css">
     <link rel="stylesheet" href="style.css">
     <title>Bugs cooker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -41,25 +43,25 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto placementBouton navBarCentrage" style=" margin-top: 1px;">
-                    <li class=" nav-item ">
+                    <li class=" nav-item">
                         <hr class="hrMenu">
-                        <a class="nav-link " href="# ">Accueil</a>
-                        <hr class="hrMenu">
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Restaurant</a>
+                        <a class="nav-link js-scrollTo" href="#acceuil">Accueil</a>
                         <hr class="hrMenu">
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Menus</a>
+                    <li class="nav-item">
+                        <a class="nav-link js-scrollTo" href="#Restaurant">Restaurant</a>
                         <hr class="hrMenu">
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Blog</a>
+                    <li class="nav-item">
+                        <a class="nav-link js-scrollTo" href="#menu">Menus</a>
                         <hr class="hrMenu">
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link js-scrollTo" href="#blog">Blog</a>
+                        <hr class="hrMenu">
+                    </li>
+                    <li class="nav-item page-scroll">
+                        <a class="nav-link js-scrollTo" href="#contact">Contact</a>
                         <hr class="hrMenu">
                     </li>
                     <li>
@@ -97,7 +99,7 @@
     <!-- CAROUSSEL -->
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner" id="acceuil">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/001.jpg" alt="First slide">
             </div>
@@ -724,6 +726,7 @@
 
 
 
+    <script src="menuscroll.js"></script>
 
 
     <!-- Script Plugin -->
@@ -743,9 +746,8 @@
 
 
 
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="scriptmenu.js"></script>
     <script src="script.js"></script>
     <script src="scriptmap.js"></script>

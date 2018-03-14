@@ -132,15 +132,15 @@ a.ytube,
 }
 
 .Restaurant__background1 {
-  background-color: rgb(200, 200, 200);
+  background-color: #fff8f3;
 }
 
 .Restaurant__background2 {
-  background-color: rgb(10, 10, 10);
+  background-color: #554f48;
 }
 
 .Restaurant__background3 {
-  background-color: rgb(150, 150, 150);
+  background-color: #fff8f3;
 }
 
 .Restaurant__galleryZoom {
@@ -209,6 +209,24 @@ a.ytube,
   font-size: 2em;
   margin: 2px 2px 2px 2px;
   padding: 10px 10px 10px 10px;
+}
+
+.Restaurant__card__profils__header {
+  background-color: #2e2a25;
+  border: 1px solid black;
+}
+
+.Restaurant__card__profils {
+  background-color: #554f48;
+  color: #fff8f3;
+  height: 250px;
+  overflow-y: scroll;
+  overflow: -moz-scrollbars-vertical;
+  margin-bottom: 0px;
+}
+
+.Restaurant__card__profils--margin {
+  margin-bottom: 20px;
 }
 
 .Restaurant__text--sign {

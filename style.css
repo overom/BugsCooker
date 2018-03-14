@@ -1,7 +1,7 @@
 /* NAVBAR */
 nav {
   z-index: 1111;
-  background-color: #f7eae0 !important;
+  background-color: #fff8f3 !important;
   padding-right: 0px !important;
   padding-left: 0px !important;
 }
@@ -27,6 +27,12 @@ nav {
   width: 20px;
 }
 
+.btnReserv {
+  position: absolute;
+  top: 15px;
+  right: 2%;
+}
+
 @media all and (max-width: 991px) {
   .btnReserv {
     left: inherit !important;
@@ -40,11 +46,6 @@ nav {
   }
 }
 
-.btnReserv {
-  position: absolute;
-  top: 15px;
-  right: 2%;
-}
 @media all and (min-width: 991px) {
   .placementBouton {
     margin-right: 150px;
@@ -53,7 +54,11 @@ nav {
     margin-right: 20px;
     height: 50px;
   }
+  .adresseNavBar {
+    display: none;
+  }
 }
+
 #navbarSupportedContent ul {
   align-items: center;
 }

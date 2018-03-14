@@ -55,8 +55,8 @@
                                     <div class="col-12 col-sm-6">
 
                                         <script src="date-picker-v5/js/datepicker.js"></script>
-                                        <label for="dp-1">Date de réservation : </label>
-                                        <input type="text" class="w16em reservation__datepicker--width" id="dp-1" name="dp-1" placeholder="JJ/MM/AAAA" />
+                                        <label for="dp-1">Date de réservation</label>
+                                        <input type="text" class="w16em reservation__input--width" id="dp-1" name="dp-1" placeholder="JJ/MM/AAAA" />
                                         <script type="text/javascript">
                                             // <![CDATA[     
                                             let opts = {
@@ -69,7 +69,7 @@
                                     </div>
                                     <div class="col-12 col-sm-6">
                                         <label for="heure">Heure d'arrivée</label>
-                                        <select class="form-control" id="heure">
+                                        <select class="reservation__input--width" id="heure">
                                             <option selected="selected">choisir...</option>
                                             <option>12h00-12h30</option>
                                             <option>12h30-13h00</option>
@@ -85,17 +85,19 @@
                                         </select>
                                     </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="votreNom">Votre nom</label>
-                                    <input required type="text" class="form-control" id="votreNom" placeholder="ex : Jean Dupont">
-                                </div>
-                                <div class="form-group">
-                                    <label for="Tel">Votre numéro de téléphone</label>
-                                    <input type="text" name="Tel" class="form-control" id="Tel" placeholder="06 XX XX XX XX" />
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <label for="votreNom">Votre nom</label>
+                                        <input required type="text" class="reservation__input--width" id="votreNom" placeholder="ex : Jean Dupont">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <label for="Tel">Votre téléphone</label>
+                                        <input type="text" name="Tel" class="reservation__input--width" id="Tel" placeholder="06 XX XX XX XX" />
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label for="nombreDePersonnes">Nombre de personnes</label>
-                                    <select class="form-control" id="nombreDePersonnes">
+                                    <select class="reservation__input--width--uneLigne" id="nombreDePersonnes">
                                         <option class="nombreNonChoisit" selected="selected">choisir...</option>
                                         <option class="nombreNormal">1</option>
                                         <option class="nombreNormal">2</option>
@@ -109,7 +111,7 @@
                                 <div class="reservation__SpecialSeptOuPlus reservation__SpecialSeptOuPlus--hidden">
                                     <div class="form-group">
                                         <label for="nombreDePersonnesSpecialSeptOuPlus">Précisez le nombre de personnes :</label>
-                                        <input type="number" value="10" class="form-control" id="SpecialSeptOuPlus" placeholder="ex : 10">
+                                        <input type="number" value="10" class="reservation__input--width--uneLigne" id="SpecialSeptOuPlus" placeholder="ex : 10">
                                     </div>
                                     <div class="form-group">
                                         <label for="messageSpecial">Pour quelle occasion?</label>
@@ -129,8 +131,8 @@
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                    <label for="votreMessage">Votre Message (facultatif - maximum 100 mots)</label>
-                                    <textarea class="form-control" id="votreMessage" rows="3"></textarea>
+                                    <label for="votreMessage">Un Message? (facultatif - max 100 mots)</label>
+                                    <textarea class="reservation__input--width--uneLigne" id="votreMessage" rows="3"></textarea>
                                 </div>
                             </form>
                         </div>

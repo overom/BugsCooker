@@ -2,9 +2,19 @@
   margin: 10px 0 10px 0;
 }
 
-.reservation__datepicker--width {
+.reservation__input--width {
   width: 90%;
 }
+
+.reservation__input--width--uneLigne {
+  width: 90%;
+}
+@media (min-width: 576px) {
+  .reservation__input--width--uneLigne {
+    width: 95%;
+  }
+}
+
 .reservation__page {
   position: fixed;
   left: 10vw;

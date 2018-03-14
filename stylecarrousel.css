@@ -1,9 +1,3 @@
-@font-face {
-  font-family: "Fuji";
-  src: url("/Users/roxanequatrecentcinquanteetun/Desktop/Wild/bug-cooker/BugsCooker/typos/Fuji-Regular.otf");
-  src: url("/Users/roxanequatrecentcinquanteetun/Desktop/Wild/bug-cooker/BugsCooker/typos/Fuji-Light.otf");
-}
-
 .carousel-caption p {
   font-family: "Arial";
   font-size: 2vw;

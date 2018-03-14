@@ -52,6 +52,21 @@
 }
 */
 
+/* Carousel */
+.carousel-caption p {
+  font-family: "Arial";
+  font-size: 2vw;
+  text-shadow: 0px 0px 9px black;
+}
+
+.carousel-caption h1 {
+  font-family: "Fuji";
+  font-size: 6vw;
+  text-shadow: 0px 0px 9px black;
+}
+.carousel-caption {
+  bottom: 50%;
+}
 /* Restaurant */
 #Restaurant .card-body {
   border-radius: 0px;

@@ -271,11 +271,15 @@ $(document).ready(function() {
     .click(function() {
       $("div.reservation__page").each(function() {
         if ($(this).hasClass("reservation__page--hidden")) {
+          $(this).removeClass("reservation__page--fadeOut");
           $(this).removeClass("reservation__page--hidden");
           $(this).addClass("reservation__page--fade");
         } else {
           $(this).removeClass("reservation__page--fade");
-          $(this).addClass("reservation__page--hidden");
+          $(this).addClass("reservation__page--fadeOut");
+          setTimeout(function() {
+            $("div.reservation__page").addClass("reservation__page--hidden");
+          }, 500);
         }
       });
     });
@@ -285,13 +289,16 @@ $(document).ready(function() {
     .click(function() {
       $("div.reservation__page").each(function() {
         if ($(this).hasClass("reservation__page--hidden")) {
+          $(this).removeClass("reservation__page--fadeOut");
           $(this).removeClass("reservation__page--hidden");
           $(this).addClass("reservation__page--fade");
         } else {
           $(this).removeClass("reservation__page--fade");
-          $(this).addClass("reservation__page--hidden");
+          $(this).addClass("reservation__page--fadeOut");
+          setTimeout(function() {
+            $("div.reservation__page").addClass("reservation__page--hidden");
+          }, 500);
         }
-        // console.log("span ok");
       });
     });
 

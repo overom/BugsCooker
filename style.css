@@ -1,3 +1,10 @@
+/* GENERAL */
+
+@font-face {
+  font-family: "Fuji";
+  src: url(fonts/fuji);
+}
+
 @media all and (max-width: 991px) {
   .btnReserv {
     left: inherit !important;
@@ -271,40 +278,77 @@
   position: relative;
   display: block;
   padding: 0;
-  margin: 0;
+  margin: 0 0 1px 0;
   background: #fff8f2;
+  border-top: #554f48 solid 1px;
   border-bottom: #554f48 solid 1px;
 }
 
 #menu .figure h2 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fuji", Arial, Helvetica, sans-serif;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 1.8rem;
-  visibility: hidden;
   color: #554f48;
 }
 
-#menu .figure:hover img + h2 {
-  visibility: visible;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+#menu .figure h6 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fuji", Arial, Helvetica, sans-serif;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-60%, -50%);
+  font-size: 1rem;
+  color: #554f48;
+  font-weight: lighter;
+}
+
+#menu .figure:hover h6 {
+  text-decoration: underline;
 }
 
 #menu .figure img {
-  opacity: 1;
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-}
-
-#menu .figure:hover img {
   opacity: 0.3;
 }
 
 #menu .col-12 {
   padding: 0;
 }
+
+/* platUn */
+
+#platUn {
+  display: none;
+}
+
+#platUn hr {
+  color: black;
+  width: 40%;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+#platUn p {
+  font-family: "PT Serif Caption", serif;
+  color: #554f48;
+  margin-top: 25px;
+  font-size: 0.9rem;
+}
+
+#platUn h2 {
+  font-family: "Fuji", Arial, Helvetica, sans-serif;
+  color: #554f48;
+  margin-bottom: 50px;
+  font-size: 2.5rem;
+}
+
+#plat
 
 /* contact */
 footer {
@@ -324,7 +368,8 @@ footer {
   color: #554f49;
 }
 
-hr {
+.sectionContact hr,
+.sectionContact hr {
   border: 0.5px solid #fff8f3;
   max-width: 20%;
 }

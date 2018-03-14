@@ -18,18 +18,13 @@ nav {
 .marginLeft10 {
   margin-left: 10px;
 }
+.margin100Top {
+  margin-top: 100px;
+}
 
 .hrNavBar {
   border: 1px solid #554f48;
-}
-
-.hrNavBarMenu {
-  border: 1px solid #554f48;
-}
-
-.hrNavBarSmall {
-  border: 1px solid #554f48;
-  width: 100px;
+  width: 20px;
 }
 
 @media all and (max-width: 991px) {
@@ -73,8 +68,8 @@ nav {
 /*LOGO POUR LE MENU */
 #socialButtonNavBar ul li a {
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: 66px;
+  height: 66px;
   transition: all 0.7s;
   -moz-transition: all 0.7s;
   -webkit-transition: all 0.7s;
@@ -83,17 +78,17 @@ nav {
 
 a.fb,
 #socialButtonNavBar ul li a.tw {
-  background: url(images/social_mediaV2.png) -256px top;
+  background: url(images/social_mediaV2-marron.png) -30px top;
 }
 
 a.tw,
 #socialButtonNavBar ul li a.fb {
-  background: url(images/social_mediaV2.png) -512px top;
+  background: url(images/social_mediaV2-marron.png) -115px top;
 }
 
 a.ytube,
 #socialButtonNavBar ul li a.ytube {
-  background: url(images/social_mediaV2.png) -640px top;
+  background: url(images/social_mediaV2-marron.png) -200px top;
 }
 
 /* @media (max-width: 991px) { .navBarCentrage { text-align: center; } } */ /* .btnReserv

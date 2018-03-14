@@ -41,21 +41,32 @@ $(document).ready(function() {
       });
     });
 
-  $("select#nombreDePersonnes")
-    .find("option.nombreSpecial")
-    .click(function() {
-      $("form")
-        .find("div.reservation__SpecialSeptOuPlus")
-        .removeClass("reservation__SpecialSeptOuPlus--hidden");
-    });
+  // $("select#nombreDePersonnes")
+  //   .find("option.nombreSpecial")
+  //   .on("click", function() {
+  //     $("form")
+  //       .find("div.reservation__SpecialSeptOuPlus")
+  //       .removeClass("reservation__SpecialSeptOuPlus--hidden");
+  //     console.log("yes for special");
+  //   });
 
-  $("select#nombreDePersonnes")
-    .find("option.nombreNormal")
-    .click(function() {
-      $("form")
-        .find("div.reservation__SpecialSeptOuPlus")
-        .addClass("reservation__SpecialSeptOuPlus--hidden");
-    });
+  // $("select#nombreDePersonnes")
+  //   .find("option.nombreNormal")
+  //   .focusout(function() {
+  //     $("form")
+  //       .find("div.reservation__SpecialSeptOuPlus")
+  //       .addClass("reservation__SpecialSeptOuPlus--hidden");
+  //     console.log("yes for normal");
+  //   });
+
+  // $("select#nombreDePersonnes").blur(function() {
+  //   $(this)
+  //     .find("option.nombreNormal")
+  //     .prop("selected") == true
+  //     ? console.log("selected")
+  //     : console.log("not selected");
+  //   console.log("yes for normal");
+  // });
 
   $("textarea#votreMessage").blur(function() {
     const separateurMotsRegex = /[ '-]+/;

@@ -279,7 +279,7 @@ $(document).ready(function() {
           $(this).addClass("reservation__page--fadeOut");
           setTimeout(function() {
             $("div.reservation__page").addClass("reservation__page--hidden");
-          }, 2000);
+          }, 500);
         }
       });
     });
@@ -297,7 +297,7 @@ $(document).ready(function() {
           $(this).addClass("reservation__page--fadeOut");
           setTimeout(function() {
             $("div.reservation__page").addClass("reservation__page--hidden");
-          }, 2000);
+          }, 500);
         }
       });
     });

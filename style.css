@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Fuji";
-  src: url(fonts/fuji);
+  src: url("fonts/Fuji-Regular.otf");
 }
 
 /* NAVBAR */
@@ -11,6 +11,7 @@ nav {
   background-color: #fff8f3 !important;
   padding-right: 0px !important;
   padding-left: 0px !important;
+  font-family: Fuji;
 }
 
 .noMarginNoPadding {
@@ -34,16 +35,37 @@ nav {
   width: 20px;
 }
 
-.btnReserv {
+header .hrMenu {
+  border: 1px solid #554f48;
   position: absolute;
-  top: 15px;
+  right: 0%;
+  width: 500px;
+  margin: 0;
+}
+header .btnReserv a {
+  color: #554f48;
+  border: 1px solid #554f48;
+}
+
+header .btnReserv a:hover {
+  color: #fff8f3;
+  background-color: #554f48;
+}
+
+header .btnReserv {
+  position: absolute;
+  top: 10px;
   right: 2%;
 }
 
+#navbarSupportedContent ul li a {
+  font-size: 140%;
+}
+
 @media all and (max-width: 991px) {
-  .btnReserv {
+  header .btnReserv {
     left: inherit !important;
-    right: 90px !important;
+    right: 80px !important;
   }
   #navbarSupportedContent ul li a {
     font-size: 150%;
@@ -62,6 +84,9 @@ nav {
     height: 50px;
   }
   .adresseNavBar {
+    display: none;
+  }
+  header .hrMenu {
     display: none;
   }
 }

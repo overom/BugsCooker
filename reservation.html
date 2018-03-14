@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="datepicker.css">
     <link rel="stylesheet" type="text/css" href="stylereservation.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
         crossorigin="anonymous">
@@ -50,6 +51,40 @@
                     <div class="col-12">
                         <div class="card card-header">
                             <form>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+
+                                        <script src="date-picker-v5/js/datepicker.js"></script>
+                                        <label for="dp-1">Date de réservation : </label>
+                                        <input type="text" class="w16em reservation__datepicker--width" id="dp-1" name="dp-1" placeholder="JJ/MM/AAAA" />
+                                        <script type="text/javascript">
+                                            // <![CDATA[     
+                                            let opts = {
+                                                // Attach input with an id of "dp-1" and give it a "d-sl-m-sl-Y" date format (e.g. 13/03/1990)                      
+                                                formElements: { "dp-1": "d-sl-m-sl-Y" }
+                                            };
+                                            datePickerController.createDatePicker(opts);
+                                            // ]]>
+                                        </script>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <label for="heure">Heure d'arrivée</label>
+                                        <select class="form-control" id="heure">
+                                            <option selected="selected">choisir...</option>
+                                            <option>12h00-12h30</option>
+                                            <option>12h30-13h00</option>
+                                            <option>13h00-13h30</option>
+                                            <option>13h30-14h00</option>
+                                            <option>19h00-19h30</option>
+                                            <option>19h30-20h00</option>
+                                            <option>20h00-20h30</option>
+                                            <option>20h30-21h00</option>
+                                            <option>21h00-21h30</option>
+                                            <option>21h30-22h00</option>
+                                            <option>22h00-22h30</option>
+                                        </select>
+                                    </div>
+                                </div>
                                 <div class="form-group">
                                     <label for="votreNom">Votre nom</label>
                                     <input required type="text" class="form-control" id="votreNom" placeholder="ex : Jean Dupont">
@@ -74,7 +109,7 @@
                                 <div class="reservation__SpecialSeptOuPlus reservation__SpecialSeptOuPlus--hidden">
                                     <div class="form-group">
                                         <label for="nombreDePersonnesSpecialSeptOuPlus">Précisez le nombre de personnes :</label>
-                                        <input type="text" class="form-control" id="SpecialSeptOuPlus" placeholder="ex : 10">
+                                        <input type="number" value="10" class="form-control" id="SpecialSeptOuPlus" placeholder="ex : 10">
                                     </div>
                                     <div class="form-group">
                                         <label for="messageSpecial">Pour quelle occasion?</label>

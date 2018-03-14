@@ -2,6 +2,9 @@
   margin: 10px 0 10px 0;
 }
 
+.reservation__datepicker--width {
+  width: 90%;
+}
 .reservation__page {
   position: fixed;
   left: 10vw;

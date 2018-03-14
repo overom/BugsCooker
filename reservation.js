@@ -43,10 +43,11 @@ $(document).ready(function() {
 
   $("select#nombreDePersonnes")
     .find("option.nombreSpecial")
-    .click(function() {
+    .on("click", function() {
       $("form")
         .find("div.reservation__SpecialSeptOuPlus")
         .removeClass("reservation__SpecialSeptOuPlus--hidden");
+      console.log("yes for special");
     });
 
   $("select#nombreDePersonnes")
@@ -55,6 +56,7 @@ $(document).ready(function() {
       $("form")
         .find("div.reservation__SpecialSeptOuPlus")
         .addClass("reservation__SpecialSeptOuPlus--hidden");
+      console.log("yes for normal");
     });
 
   $("textarea#votreMessage").blur(function() {

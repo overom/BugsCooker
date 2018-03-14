@@ -2,7 +2,7 @@
 
 @font-face {
   font-family: "Fuji";
-  src: url(fonts/fuji);
+  src: url("fonts/Fuji-Regular.otf");
 }
 
 /* NAVBAR */
@@ -11,6 +11,7 @@ nav {
   background-color: #fff8f3 !important;
   padding-right: 0px !important;
   padding-left: 0px !important;
+  font-family: Fuji;
 }
 
 .noMarginNoPadding {
@@ -34,16 +35,20 @@ nav {
   width: 20px;
 }
 
-.btnReserv {
+header .btnReserv {
   position: absolute;
-  top: 15px;
+  top: 10px;
   right: 2%;
 }
 
+#navbarSupportedContent ul li a {
+  font-size: 140%;
+}
+
 @media all and (max-width: 991px) {
-  .btnReserv {
+  header .btnReserv {
     left: inherit !important;
-    right: 90px !important;
+    right: 80px !important;
   }
   #navbarSupportedContent ul li a {
     font-size: 150%;

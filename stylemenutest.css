@@ -11,10 +11,10 @@ p {
 
 @font-face {
   font-family: "Fuji";
-  src: url("fonts/fuji/Fuji-Regular.otf");
-  src: url("fonts/fuji/Fuji-Light.otf");
-  src: url("fonts/fuji/Fuji-Bold.otf");
-  src: url("fonts/fuji/Fuji-Medium.otf");
+  src: url("Fuji-Regular.otf");
+  src: url("Fuji-Light.otf");
+  src: url("Fuji-Bold.otf");
+  src: url("Fuji-Medium.otf");
 }
 
 h2 {
@@ -66,4 +66,9 @@ h2 {
 
 #menu .figure:hover img {
   opacity: 0.3;
+}
+
+.bloc-menu-marron {
+  padding-bottom: 500px;
+  background-color: black;
 }

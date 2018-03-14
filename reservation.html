@@ -11,52 +11,129 @@
     <title>Réservation</title>
 </head>
 
+<!-- 
+    TO DO :
+- 
+-->
+
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h1></h1>
-            </div>
-            <div class="col">
-                <form>
-                    <div class="form-group">
-                        <label for="exampleFormControlInput1">Email address</label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+
+    <!-- TO DO : CET HEADER A SUPPRIMER LORS DE L'UNIFICATION -->
+    <header>
+        <div class="btnReserv">
+            <a class="btn btn-md btn-outline-secondary" href="#" role="button">Réservation</a>
+        </div>
+    </header>
+
+
+
+    <section id="reservation">
+
+        <div class="reservation__page reservation__page--hidden">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="d-flex ml-auto p-2">
+                        <span class="btn btn-dark btnReserv">X</span>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect1">Example select</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1>Réservation</h1>
+                        <p>Sit aute exercitation sint voluptate veniam occaecat proident laborum. Nisi do esse anim sit laboris
+                            labore voluptate esse. Laborum eu aute consequat ipsum fugiat aliquip occaecat dolor sunt in
+                            amet.
+                        </p>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlSelect2">Example multiple select</label>
-                        <select multiple class="form-control" id="exampleFormControlSelect2">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card card-header">
+                            <form>
+                                <div class="form-group">
+                                    <label for="votreNom">Votre nom</label>
+                                    <input required type="text" class="form-control" id="votreNom" placeholder="ex : Jean Dupont">
+                                </div>
+                                <div class="form-group">
+                                    <label for="Tel">Votre numéro de téléphone</label>
+                                    <input type="text" name="Tel" class="form-control" id="Tel" placeholder="06 XX XX XX XX" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="nombreDePersonnes">Nombre de personnes</label>
+                                    <select class="form-control" id="nombreDePersonnes">
+                                        <option class="nombreNonChoisit" selected="selected">choisir...</option>
+                                        <option class="nombreNormal">1</option>
+                                        <option class="nombreNormal">2</option>
+                                        <option class="nombreNormal">3</option>
+                                        <option class="nombreNormal">4</option>
+                                        <option class="nombreNormal">5</option>
+                                        <option class="nombreNormal">6</option>
+                                        <option class="nombreSpecial">7 ou plus (précisez)</option>
+                                    </select>
+                                </div>
+                                <div class="reservation__SpecialSeptOuPlus reservation__SpecialSeptOuPlus--hidden">
+                                    <div class="form-group">
+                                        <label for="nombreDePersonnesSpecialSeptOuPlus">Précisez le nombre de personnes :</label>
+                                        <input type="text" class="form-control" id="SpecialSeptOuPlus" placeholder="ex : 10">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="messageSpecial">Pour quelle occasion?</label>
+                                        <br/>
+                                        <input type="radio" name="name" id="Anniversaire" value="Anniversaire" class="Anniversaire">
+                                        <label for="Anniversaire">Anniversaire</label>
+                                        <input type="radio" name="name" id="MariageFiançaille" value="MariageFiançaille" class="MariageFiançaille">
+                                        <label for="Mariage-Fiançaille">Mariage/fiançaille</label>
+                                        <input type="radio" name="name" id="SoireeEntreprise" value="SoireeEntreprise" class="SoireeEntreprise">
+                                        <label for="SoireeEntreprise">Soirée d'entreprise</label>
+                                        <input type="radio" name="name" id="Seminaire" value="Seminaire" class="Seminaire">
+                                        <label for="Seminaire">Séminaire</label>
+                                        <input type="radio" name="name" id="Autre" value="Autre" class="Autre">
+                                        <label for="Autre">Autre</label>
+                                        <input type="radio" name="name" id="Aucun" value="Aucun" class="Aucun">
+                                        <label for="Aucun">Aucun</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="votreMessage">Votre Message (facultatif - maximum 100 mots)</label>
+                                    <textarea class="form-control" id="votreMessage" rows="3"></textarea>
+                                </div>
+                            </form>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Example textarea</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 text-center reservation__submit--border">
+                        <div class="reservation__submit--border">
+                            <div class="reservation__submit--secondBorder">
+                                <button type="button" class="btn btn-danger reservation__submit">Envoyer</button>
+                            </div>
+                        </div>
                     </div>
-                </form>
+                </div>
+
+
             </div>
         </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+
+    </section>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gijgo@1.8.1/combined/js/gijgo.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+
+    <script src="reservation.js"></script>
+
+
 </body>
 
 </html>

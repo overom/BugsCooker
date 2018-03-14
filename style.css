@@ -267,12 +267,6 @@
 
 /* Menu */
 
-#blocMarron {
-  width: 400px;
-  height: 200px;
-  background-color: black;
-}
-
 #menu .figure {
   position: relative;
   display: block;
@@ -313,6 +307,27 @@
 
 #menu .col-12 {
   padding: 0;
+}
+
+/* platUn */
+
+#platUn p {
+  font-family: "PT Serif Caption", serif;
+  color: #554f48;
+  margin-top: 25px;
+  font-size: 0.9rem;
+}
+
+#platUn img {
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#platUn h2 {
+  font-family: "Fuji", Arial, Helvetica, sans-serif;
+  color: #554f48;
+  margin-top: 40px;
+  margin-bottom: 10px;
 }
 
 /* contact */

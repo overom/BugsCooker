@@ -264,12 +264,8 @@
     transform: translate3d(0, 0, 0);
   }
 }
-/* Menu */
 
-#menu .container-fluid {
-  padding: 0;
-  margin: 0;
-}
+/* Menu */
 
 #menu .figure {
   position: relative;
@@ -278,11 +274,6 @@
   margin: 0;
   background: #fff8f2;
   border-bottom: #554f48 solid 1px;
-}
-
-#menu .figure .col-12 {
-  margin: 0;
-  padding: 0;
 }
 
 #menu .figure h2 {
@@ -483,30 +474,20 @@ section#contact li:hover a.toque {
 
 /* BLOG */
 
+.bg-colorMarron {
+  background-color: #554f48;
+}
+
 #blog {
   padding-top: 85px;
   padding-bottom: 60px;
-  background-color: #fff8f2;
+  background-color: #ebe0d7;
 }
 
-#blog,
-#avis p {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "PT Serif Caption", Arial, Helvetica, sans-serif;
-  color: #fff8f2;
-  font-weight: lighter;
+#blog .card-header {
+  font-weight: bold;
 }
 
-#blog,
-#avis h3 {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Fuji", Arial, Helvetica, sans-serif;
-  color: #fff8f2;
-}
-
-#blog .card,
 #avis .card {
   border: 0px;
   background-color: #554f48;
@@ -514,7 +495,7 @@ section#contact li:hover a.toque {
 
 #avis {
   padding-bottom: 150px;
-  background-color: #fff8f2;
+  background-color: #ebe0d7;
 }
 
 #avis span {
@@ -529,7 +510,17 @@ section#contact li:hover a.toque {
   max-width: 15%;
 }
 
-#blog hr {
-  border: 0.5px solid #fff8f3;
-  max-width: 30%;
+#avis h3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fuji", Arial, Helvetica, sans-serif;
+  color: #fff8f2;
+}
+
+#avis p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Serif Caption", Arial, Helvetica, sans-serif;
+  color: #fff8f2;
+  font-weight: lighter;
 }

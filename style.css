@@ -264,12 +264,8 @@
     transform: translate3d(0, 0, 0);
   }
 }
-/* Menu */
 
-#menu .container-fluid {
-  padding: 0;
-  margin: 0;
-}
+/* Menu */
 
 #menu .figure {
   position: relative;
@@ -278,11 +274,6 @@
   margin: 0;
   background: #fff8f2;
   border-bottom: #554f48 solid 1px;
-}
-
-#menu .figure .col-12 {
-  margin: 0;
-  padding: 0;
 }
 
 #menu .figure h2 {
@@ -404,7 +395,7 @@ hr {
 /*social media icons - CSS animation */
 
 section#contact ul a,
-i {
+#socialButton ul li a {
   display: inline-block;
   width: 128px;
   height: 128px;
@@ -415,17 +406,17 @@ i {
 }
 
 a.fb,
-.fa-facebook {
+#socialButton ul li a.tw {
   background: url(images/social_media.png) -256px top;
 }
 
 a.tw,
-.fa-twitter {
+#socialButton ul li a.fb {
   background: url(images/social_media.png) -512px top;
 }
 
 a.ytube,
-.fa-youtube {
+#socialButton ul li a.ytube {
   background: url(images/social_media.png) -640px top;
 }
 
@@ -434,17 +425,17 @@ a.toque {
 }
 
 section#contact li:hover a.fb,
-.fa-facebook:hover {
+#socialButton ul li a.tw:hover {
   background: url(images/social_media.png) -256px bottom;
 }
 
 section#contact li:hover a.tw,
-.fa-twitter:hover {
+#socialButton ul li a.fb:hover {
   background: url(images/social_media.png) -512px bottom;
 }
 
 section#contact li:hover a.ytube,
-.fa-youtube:hover {
+#socialButton ul li a.ytube:hover {
   background: url(images/social_media.png) -640px bottom;
 }
 
@@ -454,20 +445,20 @@ section#contact li:hover a.toque {
 
 @media (max-width: 991px) {
   section#contact li a.fb,
-  .fa-facebook {
+  #socialButton ul li a.fb {
     background: url(images/social_media.png) -256px bottom;
   }
 }
 
 @media (max-width: 991px) {
   section#contact li a.tw,
-  .fa-twitter {
+  #socialButton ul li a.tw {
     background: url(images/social_media.png) -512px bottom;
   }
 }
 @media (max-width: 991px) {
   section#contact li a.ytube,
-  .fa-youtube {
+  #socialButton ul li a.ytube {
     background: url(images/social_media.png) -640px bottom;
   }
 }
@@ -481,32 +472,25 @@ section#contact li:hover a.toque {
   color: #fff8f3;
 }
 
+.font-50 {
+  font-size: 25px;
+}
 /* BLOG */
+
+.bg-colorMarron {
+  background-color: #554f48;
+}
 
 #blog {
   padding-top: 85px;
   padding-bottom: 60px;
-  background-color: #fff8f2;
+  background-color: #ebe0d7;
 }
 
-#blog,
-#avis p {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "PT Serif Caption", Arial, Helvetica, sans-serif;
-  color: #fff8f2;
-  font-weight: lighter;
+#blog .card-header {
+  font-weight: bold;
 }
 
-#blog,
-#avis h3 {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-family: "Fuji", Arial, Helvetica, sans-serif;
-  color: #fff8f2;
-}
-
-#blog .card,
 #avis .card {
   border: 0px;
   background-color: #554f48;
@@ -514,7 +498,7 @@ section#contact li:hover a.toque {
 
 #avis {
   padding-bottom: 150px;
-  background-color: #fff8f2;
+  background-color: #ebe0d7;
 }
 
 #avis span {
@@ -529,7 +513,17 @@ section#contact li:hover a.toque {
   max-width: 15%;
 }
 
-#blog hr {
-  border: 0.5px solid #fff8f3;
-  max-width: 30%;
+#avis h3 {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fuji", Arial, Helvetica, sans-serif;
+  color: #fff8f2;
+}
+
+#avis p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Serif Caption", Arial, Helvetica, sans-serif;
+  color: #fff8f2;
+  font-weight: lighter;
 }

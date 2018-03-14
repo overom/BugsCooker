@@ -212,11 +212,13 @@ a.ytube,
 }
 
 .Restaurant__card__profils__header {
-  background-color: #554f48;
+  background-color: #2e2a25;
+  border: 1px solid black;
 }
 
 .Restaurant__card__profils {
-  background-color: white;
+  background-color: #554f48;
+  color: #fff8f3;
   height: 250px;
   overflow-y: scroll;
   overflow: -moz-scrollbars-vertical;

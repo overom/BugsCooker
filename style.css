@@ -15,7 +15,7 @@ nav {
     font-size: 150%;
   }
   #navbarSupportedContent ul li {
-    margin-top: 25px;
+    margin-top: 1px;
   }
 }
 .btnReserv {
@@ -41,7 +41,39 @@ nav {
 #navbarSupportedContent ul li a:hover {
   border-bottom: 4px solid #554f49;
   padding-bottom: 4px;
-} /* @media (max-width: 991px) { .navBarCentrage { text-align: center; } } */ /* .btnReserv
+}
+
+/*LOGO POUR LE MENU */
+#socialButtonNavBar ul li a {
+  display: inline-block;
+  width: 128px;
+  height: 128px;
+  transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+}
+
+a.fb,
+#socialButton ul li a.tw {
+  background: url(images/social_media.png) -256px top;
+}
+
+a.tw,
+#socialButton ul li a.fb {
+  background: url(images/social_media.png) -512px top;
+}
+
+a.ytube,
+#socialButton ul li a.ytube {
+  background: url(images/social_media.png) -640px top;
+}
+
+a.toque {
+  background: url(images/toques-blanches-nb.png) no-repeat;
+}
+
+/* @media (max-width: 991px) { .navBarCentrage { text-align: center; } } */ /* .btnReserv
 { position: absolute; left: 52%; } */ /* @media all and (max-width: 991px) { .btnReserv { left: inherit !important; right:
 90px !important; } } .btnReserv { position: absolute; left: 90%; } */
 

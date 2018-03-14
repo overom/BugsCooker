@@ -35,12 +35,21 @@ nav {
   width: 20px;
 }
 
-.hrMenu {
+header .hrMenu {
   border: 1px solid #554f48;
   position: absolute;
   right: 0%;
   width: 500px;
   margin: 0;
+}
+header .btnReserv a {
+  color: #554f48;
+  border: 1px solid #554f48;
+}
+
+header .btnReserv a:hover {
+  color: #fff8f3;
+  background-color: #554f48;
 }
 
 header .btnReserv {
@@ -75,6 +84,9 @@ header .btnReserv {
     height: 50px;
   }
   .adresseNavBar {
+    display: none;
+  }
+  header .hrMenu {
     display: none;
   }
 }

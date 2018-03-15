@@ -600,21 +600,18 @@ section#contact li:hover a.toque {
 }
 
 @media (max-width: 991px) {
-  section#contact li a.fb,
-  #socialButton ul li a.fb {
+  section#contact li a.fb {
     background: url(images/social_media.png) -256px bottom;
   }
 }
 
 @media (max-width: 991px) {
-  section#contact li a.tw,
-  #socialButton ul li a.tw {
+  section#contact li a.tw {
     background: url(images/social_media.png) -512px bottom;
   }
 }
 @media (max-width: 991px) {
-  section#contact li a.ytube,
-  #socialButton ul li a.ytube {
+  section#contact li a.ytube {
     background: url(images/social_media.png) -640px bottom;
   }
 }
@@ -623,13 +620,72 @@ section#contact li:hover a.toque {
     background: url(images/toques-blanches.png) no-repeat;
   }
 }
+/* FOOTER */
+footer {
+  background-color: #554f48;
+}
 
+.lineFooter {
+  position: absolute;
+  right: 0;
+  height: 20px;
+  width: 1px;
+  border-right: 1px solid white;
+}
+
+@media (max-width: 764px) {
+  .lineFooter {
+    display: none;
+  }
+}
+
+#socialButton ul li a {
+  display: inline-block;
+  width: 120px;
+  height: 120px;
+  transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+}
+
+#socialButton ul li a.tw {
+  background: url(images/social_mediaV2.png) -140px top;
+}
+
+#socialButton ul li a.fb {
+  background: url(images/social_mediaV2.png) -270px top;
+}
+
+#socialButton ul li a.ytube {
+  background: url(images/social_mediaV2.png) -400px top;
+}
+
+#socialButton ul li a.tw:hover {
+  background: url(images/social_mediaV2.png) -140px bottom;
+}
+
+#socialButton ul li a.fb:hover {
+  background: url(images/social_mediaV2.png) -270px bottom;
+}
+
+#socialButton ul li a.ytube:hover {
+  background: url(images/social_mediaV2.png) -400px bottom;
+}
 .lienFooter {
   color: #fff8f3;
 }
 
 .font-50 {
   font-size: 25px;
+}
+
+footer .textFooter {
+  color: #fff8f3;
+}
+
+footer .hrFooter {
+  border: 0.5px solid #fff8f3;
 }
 /* BLOG */
 

@@ -141,9 +141,7 @@ a.ytube,
 90px !important; } } .btnReserv { position: absolute; left: 90%; } */
 
 /* Carousel */
-#carouselExampleControls {
-  padding-top: 75px;
-}
+
 .carousel-caption p {
   font-family: "Arial";
   font-size: 1.8vw;
@@ -173,7 +171,7 @@ a.ytube,
 
 .Restaurant__text--title--dephasage {
   position: relative;
-  top: -45px;
+  top: -42px;
 }
 
 .Restaurant__text--beige {
@@ -241,7 +239,7 @@ a.ytube,
 }
 
 .Restaurant__text {
-  font-size: 1.5em;
+  font-size: 1em;
   /* margin: 20px 5px 0px 5px; */
   padding-top: 20px;
 }
@@ -258,12 +256,12 @@ a.ytube,
 }
 
 .Restaurant__textDuGerant {
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 0px 10px 10px 10px;
 }
 
 .Restaurant__text--title {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 2px 2px 2px 2px;
   padding: 10px 10px 10px 10px;
 }
@@ -280,10 +278,32 @@ a.ytube,
 .Restaurant__card__profils {
   background-color: #80766b;
   color: #fff8f3;
-  height: 250px;
+  height: 180px;
   overflow-y: scroll;
   overflow: -moz-scrollbars-vertical;
   margin-bottom: 0px;
+}
+
+@media (min-width: 576px) {
+  .Restaurant__card__profils {
+    background-color: #80766b;
+    color: #fff8f3;
+    height: 200px;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-vertical;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Restaurant__card__profils {
+    background-color: #80766b;
+    color: #fff8f3;
+    height: 220px;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-vertical;
+    margin-bottom: 0px;
+  }
 }
 
 .Restaurant__card__profils--margin {
@@ -403,12 +423,25 @@ a.ytube,
 
 @media (max-width: 991px) {
   #menu .figure h2 {
-    font-size: 1.6rem !important;
+    font-size: 2rem !important;
     display: block;
-    padding-bottom: 45px;
+    padding-top: 30px;
   }
   #menu .figure h6 {
+    margin-top: 10px;
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 479px) {
+  #menu .figure h2 {
     font-size: 1rem !important;
+    display: block;
+    padding-top: 30px;
+  }
+  #menu .figure h6 {
+    margin-top: 10px;
+    font-size: 0.8rem !important;
   }
 }
 
@@ -518,6 +551,7 @@ button {
   font-weight: 700;
   position: relative;
   vertical-align: middle;
+  outline: none;
 }
 
 button::before {
@@ -526,6 +560,7 @@ button::before {
   position: absolute;
   width: 100%;
   height: 100%;
+  outline: none;
 }
 
 button::after {
@@ -534,52 +569,62 @@ button::after {
   position: absolute;
   width: 100%;
   height: 100%;
+  outline: none;
 }
 
 .draw::before {
   border: 2px solid transparent;
   width: 0;
   height: 0;
+  outline: none;
 }
 
 .draw::after {
   border: 2px solid transparent;
   width: 0;
   height: 0;
+  outline: none;
 }
 
 .draw::before {
   top: 0;
   left: 0;
+  outline: none;
 }
 
 .draw::after {
   bottom: 0;
   right: 0;
+  outline: none;
 }
 
 .draw:hover {
   color: #292623;
+  outline: none;
 }
 
 .draw:hover {
   color: #292623;
+  outline: none;
 }
 
 .draw:hover::before {
   width: 100%;
   height: 100%;
+  outline: none;
 }
 
 .draw:hover::after {
   width: 100%;
   height: 100%;
+  outline: none;
 }
 
 .draw:hover::before {
   border-top-color: #292623;
   border-right-color: #292623;
   transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
+  outline: none;
 }
 
 .draw:hover::after {
@@ -587,10 +632,12 @@ button::after {
   border-left-color: #292623;
   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s,
     height 0.25s ease-out 0.75s;
+  outline: none;
 }
 
 .draw {
   transition: color 0.25s;
+  outline: none;
 }
 
 /* contact */
@@ -1345,7 +1392,10 @@ body.fd-drag-active {
   top: 10vh;
   width: 80vw;
   max-height: 80vh;
-  background-color: rosybrown;
+  background-color: #181614;
+  border: 1px solid #fff8f3;
+  color: #fff8f3;
+  z-index: 1121;
   overflow-y: scroll;
   overflow: -moz-scrollbars-vertical;
 }

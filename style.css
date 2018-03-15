@@ -1366,7 +1366,10 @@ body.fd-drag-active {
   top: 10vh;
   width: 80vw;
   max-height: 80vh;
-  background-color: rosybrown;
+  background-color: #181614;
+  border: 1px solid #fff8f3;
+  color: #fff8f3;
+  z-index: 1121;
   overflow-y: scroll;
   overflow: -moz-scrollbars-vertical;
 }

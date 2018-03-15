@@ -380,6 +380,17 @@ a.ytube,
 
 /* Menu */
 
+@media (max-width: 991px) {
+  #menu .figure h2 {
+    font-size: 1.6rem !important;
+    display: block;
+    padding-bottom: 45px;
+  }
+  #menu .figure h6 {
+    font-size: 1rem !important;
+  }
+}
+
 #menu .figure {
   position: relative;
   display: block;
@@ -398,7 +409,9 @@ a.ytube,
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 1.8rem;
+  font-size: 4rem;
+  display: block;
+  padding-bottom: 45px;
   color: #554f48;
 }
 
@@ -410,7 +423,7 @@ a.ytube,
   top: 65%;
   left: 50%;
   transform: translate(-60%, -50%);
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #554f48;
   font-weight: lighter;
 }
@@ -427,34 +440,44 @@ a.ytube,
   padding: 0;
 }
 
-/* platUn */
+/* plat 1, 2, 3, 4 */
 
-#platUn {
+#platUn,
+#platDeux,
+#platTrois,
+#platQuatre {
   display: none;
 }
 
-#platUn hr {
+#platUn hr,
+#platDeux hr,
+#platTrois hr,
+#platQuatre hr {
   color: black;
   width: 40%;
   margin-top: 60px;
   margin-bottom: 60px;
 }
 
-#platUn p {
+#platUn p,
+#platDeux p,
+#platTrois p,
+#platQuatre p {
   font-family: "PT Serif Caption", serif;
   color: #554f48;
   margin-top: 25px;
   font-size: 0.9rem;
 }
 
-#platUn h2 {
+#platUn h2,
+#platDeux h2,
+#platTrois h2,
+#platQuatre h2 {
   font-family: "Fuji", Arial, Helvetica, sans-serif;
   color: #554f48;
   margin-bottom: 50px;
   font-size: 2.5rem;
 }
-
-#plat
 
 /* contact */
 footer {

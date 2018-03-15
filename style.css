@@ -139,7 +139,9 @@ a.ytube,
 /* Carousel */
 
 .carousel-caption p {
-  font-family: "Arial";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Serif", Arial, Helvetica, sans-serif;
   font-size: 1.8vw;
 }
 
@@ -171,10 +173,16 @@ a.ytube,
 }
 
 .Restaurant__text--beige {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Serif", Arial, Helvetica, sans-serif;
   color: #fff8f3;
 }
 
 .Restaurant__text--taupe {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Serif", Arial, Helvetica, sans-serif;
   color: #554f48;
 }
 
@@ -257,6 +265,9 @@ a.ytube,
 }
 
 .Restaurant__text--title {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Serif", Arial, Helvetica, sans-serif;
   font-size: 1.5em;
   margin: 2px 2px 2px 2px;
   padding: 10px 10px 10px 10px;
@@ -278,6 +289,9 @@ a.ytube,
   overflow-y: scroll;
   overflow: -moz-scrollbars-vertical;
   margin-bottom: 0px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Serif", Arial, Helvetica, sans-serif;
 }
 
 @media (min-width: 576px) {
@@ -288,6 +302,9 @@ a.ytube,
     overflow-y: scroll;
     overflow: -moz-scrollbars-vertical;
     margin-bottom: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "PT Serif", Arial, Helvetica, sans-serif;
   }
 }
 
@@ -299,6 +316,9 @@ a.ytube,
     overflow-y: scroll;
     overflow: -moz-scrollbars-vertical;
     margin-bottom: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: "PT Serif", Arial, Helvetica, sans-serif;
   }
 }
 
@@ -858,6 +878,9 @@ footer .hrFooter {
 }
 #blog .card-body p {
   padding-top: 20px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Serif", Arial, Helvetica, sans-serif;
 }
 
 #avis .card {
@@ -892,9 +915,10 @@ footer .hrFooter {
 #avis p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "PT Serif Caption", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Serif", Arial, Helvetica, sans-serif;
   color: #fff8f2;
-  font-weight: lighter;
 }
 
 /* RESERVATION */

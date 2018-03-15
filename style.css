@@ -662,10 +662,6 @@ a.ytube,
   background: url(images/social_media.png) -640px top;
 }
 
-a.toque {
-  background: url(images/toques-blanches-nb.png) no-repeat;
-}
-
 section#contact li:hover a.fb,
 #socialButton ul li a.tw:hover {
   background: url(images/social_media.png) -256px bottom;
@@ -681,8 +677,33 @@ section#contact li:hover a.ytube,
   background: url(images/social_media.png) -640px bottom;
 }
 
+section#contact#2lignes ul a,
+#socialButton ul li a {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+}
+a.laFourchette {
+  background: url(images/logo-la-fourchette_nb.png) no-repeat;
+}
+a.toque {
+  background: url(images/toques-blanches-nb.png) no-repeat;
+}
+a.tripadvisor {
+  background: url(images/logo_tripA_nb.png) no-repeat;
+}
 section#contact li:hover a.toque {
   background: url(images/toques-blanches.png) no-repeat;
+}
+section#contact li:hover a.laFourchette {
+  background: url(images/logo_fourchette.png) 50px top;
+}
+section#contact li:hover a.tripadvisor {
+  background: url(images/logo_tripA.png) 0px top;
 }
 
 @media (max-width: 991px) {

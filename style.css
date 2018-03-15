@@ -165,7 +165,7 @@ a.ytube,
 
 .Restaurant__text--title--dephasage {
   position: relative;
-  top: -45px;
+  top: -42px;
 }
 
 .Restaurant__text--beige {
@@ -233,7 +233,7 @@ a.ytube,
 }
 
 .Restaurant__text {
-  font-size: 1.5em;
+  font-size: 1em;
   /* margin: 20px 5px 0px 5px; */
   padding-top: 20px;
 }
@@ -250,12 +250,12 @@ a.ytube,
 }
 
 .Restaurant__textDuGerant {
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 0px 10px 10px 10px;
 }
 
 .Restaurant__text--title {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 2px 2px 2px 2px;
   padding: 10px 10px 10px 10px;
 }

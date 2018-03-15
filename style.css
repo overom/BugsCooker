@@ -727,7 +727,7 @@ footer {
 
 #socialButton ul li a {
   display: inline-block;
-  width: 120px;
+  width: 90px;
   height: 120px;
   transition: all 0.7s;
   -moz-transition: all 0.7s;
@@ -736,27 +736,27 @@ footer {
 }
 
 #socialButton ul li a.tw {
-  background: url(images/social_mediaV2.png) -140px top;
+  background: url(images/social_mediaV2.png) 0px top;
 }
 
 #socialButton ul li a.fb {
-  background: url(images/social_mediaV2.png) -270px top;
+  background: url(images/social_mediaV2.png) -260px top;
 }
 
 #socialButton ul li a.ytube {
-  background: url(images/social_mediaV2.png) -400px top;
+  background: url(images/social_mediaV2.png) -390px top;
 }
 
 #socialButton ul li a.tw:hover {
-  background: url(images/social_mediaV2.png) -140px bottom;
+  background: url(images/social_mediaV2.png) -30px bottom;
 }
 
 #socialButton ul li a.fb:hover {
-  background: url(images/social_mediaV2.png) -270px bottom;
+  background: url(images/social_mediaV2.png) -260px bottom;
 }
 
 #socialButton ul li a.ytube:hover {
-  background: url(images/social_mediaV2.png) -400px bottom;
+  background: url(images/social_mediaV2.png) -390px bottom;
 }
 .lienFooter {
   color: #fff8f3;

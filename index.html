@@ -35,7 +35,7 @@
             </div>
 
 
-            <button class="navbar-toggler marginRight-10" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            <button class="navbar-toggler marginRight-10 debugButton" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -49,7 +49,7 @@
                         <hr class="hrMenu">
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scrollTo" href="#Restaurant">Restaurant</a>
+                        <a class="nav-link js-scrollTo" href="#resto">Restaurant</a>
                         <hr class="hrMenu">
                     </li>
                     <li class="nav-item">
@@ -98,8 +98,9 @@
 
     <!-- CAROUSSEL -->
 
+    <div id="acceuil"></div>
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" id="acceuil">
+        <div class="carousel-inner">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/005.jpg" alt="First slide">
                 <div class="carousel-caption">
@@ -132,21 +133,23 @@
         </a>
     </div>
 
+
     <!-- RESTAURANT -->
+
     <section id="Restaurant">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 card card-body Restaurant__background1 Restaurant__sectionDuGerant--padding">
                     <div class="Restaurant__sectionDuGerant text-center">
                         <div class="Restaurant__text--title--dephasage Restaurant__text--title--border badge badge-primary badge-light display-4 Restaurant__text--fadeInRight">
-                            <h2 class="Restaurant__text--title Restaurant__text--title--secondBorder badge badge-primary badge-light display-4">Le Restaurant</h2>
+                            <h2 id="resto" class=" Restaurant__text--title Restaurant__text--title--secondBorder badge badge-primary badge-light display-4 ">Le Restaurant</h2>
                         </div>
-                        <div class="Restaurant__textDuGerant Restaurant__text--fadeInUp Restaurant__text--beige">
+                        <div class="Restaurant__textDuGerant Restaurant__text--fadeInUp Restaurant__text--beige ">
                             <p>« Culpa consectetur tempor qui eu cillum labore consectetur adipisicing qui anim quis culpa elit
                                 exercitation. Excepteur eu aute culpa pariatur. Occaecat nostrud elit Lorem enim enim qui
                                 adipisicing non reprehenderit consequat incididunt duis. »
                             </p>
-                            <p class="Restaurant__text--sign Restaurant__text--beige">
+                            <p class="Restaurant__text--sign Restaurant__text--beige ">
                                 Le gérant.
                             </p>
                         </div>
@@ -200,7 +203,9 @@
                         </div>
                     </div>
                 </div>
+
                 <!-- <div class="w-100"></div> -->
+
                 <div class="col-12 col-sm-6 col-md-4">
                     <div class="Restaurant__galleryZoom">
                         <p class="Restaurant__galleryZoom--display btn btn-secondary">Cliquez pour zoomer</p>
@@ -497,12 +502,15 @@
 
     <!-- CONTACT -->
 
-    <div class="sectionContact">
-        <!-- Titre contact -->
 
-        <!-- Coordonée du restaurant -->
+    <!-- Titre contact -->
+
+    <!-- Coordonée du restaurant -->
+
+    <div class="sectionContact">
         <section id="contact">
-            <div class="container">
+
+            <div class="container-fluid">
                 <div class="text-center">
                     <div class="badge badge-primary badge-light display-4 Restaurant__text--fadeInRight" style="border: 1px solid #554f48;
                                       border-radius: 0; position: relative; top: -27px; z-index: 500;">
@@ -510,6 +518,7 @@
                                       border-radius: 0;">Contact</h2>
                     </div>
                 </div>
+
                 <div class="row">
                     <div class="col-md-6 text-center font-50" style=" padding-top: 70px;">
                         <h2 class="h1">BUGS COOKER</h2>
@@ -577,10 +586,10 @@
                     </div>
                 </div>
             </div>
-
-            <!-- fin Map -->
-        </section>
     </div>
+    <!-- fin Map -->
+    </section>
+
 
     <!-- BLOG -->
     <section id="blog">

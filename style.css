@@ -20,7 +20,7 @@ nav {
 }
 
 .marginRight-10 {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .marginLeft10 {
@@ -39,7 +39,7 @@ header .hrMenu {
   border: 1px solid #554f48;
   position: absolute;
   right: 0%;
-  width: 500px;
+  width: 1500px;
   margin: 0;
 }
 header .btnReserv a {
@@ -67,6 +67,10 @@ header .btnReserv {
     left: inherit !important;
     right: 80px !important;
   }
+  header .btnReserv a {
+    margin-top: 15px !important;
+  }
+
   #navbarSupportedContent ul li a {
     font-size: 150%;
   }

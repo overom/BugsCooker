@@ -167,20 +167,28 @@ a.ytube,
   top: -45px;
 }
 
+.Restaurant__text--beige {
+  color: #fff8f3;
+}
+
+.Restaurant__text--taupe {
+  color: #554f48;
+}
+
 .Restaurant__hidden {
   opacity: 0;
 }
 
 .Restaurant__background1 {
-  background-color: #fff8f3;
-}
-
-.Restaurant__background2 {
   background-color: #554f48;
 }
 
-.Restaurant__background3 {
+.Restaurant__background2 {
   background-color: #fff8f3;
+}
+
+.Restaurant__background3 {
+  background-color: #554f48;
 }
 
 .Restaurant__galleryZoom {
@@ -256,8 +264,12 @@ a.ytube,
   border: 1px solid black;
 }
 
+.Restaurant__card__profils__header img {
+  border: solid 1px rgba(0, 0, 0, 0.25);
+}
+
 .Restaurant__card__profils {
-  background-color: #554f48;
+  background-color: #80766b;
   color: #fff8f3;
   height: 250px;
   overflow-y: scroll;

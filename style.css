@@ -20,7 +20,7 @@ nav {
 }
 
 .marginRight-10 {
-  margin-right: 10px;
+  margin-right: 20px;
 }
 
 .marginLeft10 {
@@ -39,7 +39,7 @@ header .hrMenu {
   border: 1px solid #554f48;
   position: absolute;
   right: 0%;
-  width: 500px;
+  width: 1500px;
   margin: 0;
 }
 header .btnReserv a {
@@ -67,6 +67,10 @@ header .btnReserv {
     left: inherit !important;
     right: 80px !important;
   }
+  header .btnReserv a {
+    margin-top: 15px !important;
+  }
+
   #navbarSupportedContent ul li a {
     font-size: 150%;
   }
@@ -133,16 +137,17 @@ a.ytube,
 90px !important; } } .btnReserv { position: absolute; left: 90%; } */
 
 /* Carousel */
+#carouselExampleControls {
+  padding-top: 75px;
+}
 .carousel-caption p {
   font-family: "Arial";
-  font-size: 2vw;
-  text-shadow: 0px 0px 9px black;
+  font-size: 1.8vw;
 }
 
 .carousel-caption h1 {
   font-family: "Fuji";
   font-size: 6vw;
-  text-shadow: 0px 0px 9px black;
 }
 .carousel-caption {
   bottom: 50%;
@@ -164,7 +169,15 @@ a.ytube,
 
 .Restaurant__text--title--dephasage {
   position: relative;
-  top: -45px;
+  top: -42px;
+}
+
+.Restaurant__text--beige {
+  color: #fff8f3;
+}
+
+.Restaurant__text--taupe {
+  color: #554f48;
 }
 
 .Restaurant__hidden {
@@ -172,15 +185,15 @@ a.ytube,
 }
 
 .Restaurant__background1 {
-  background-color: #fff8f3;
-}
-
-.Restaurant__background2 {
   background-color: #554f48;
 }
 
-.Restaurant__background3 {
+.Restaurant__background2 {
   background-color: #fff8f3;
+}
+
+.Restaurant__background3 {
+  background-color: #554f48;
 }
 
 .Restaurant__galleryZoom {
@@ -224,7 +237,7 @@ a.ytube,
 }
 
 .Restaurant__text {
-  font-size: 1.5em;
+  font-size: 1em;
   /* margin: 20px 5px 0px 5px; */
   padding-top: 20px;
 }
@@ -241,12 +254,12 @@ a.ytube,
 }
 
 .Restaurant__textDuGerant {
-  font-size: 1.5em;
+  font-size: 1em;
   margin: 0px 10px 10px 10px;
 }
 
 .Restaurant__text--title {
-  font-size: 2em;
+  font-size: 1.5em;
   margin: 2px 2px 2px 2px;
   padding: 10px 10px 10px 10px;
 }
@@ -256,8 +269,12 @@ a.ytube,
   border: 1px solid black;
 }
 
+.Restaurant__card__profils__header img {
+  border: solid 1px rgba(0, 0, 0, 0.25);
+}
+
 .Restaurant__card__profils {
-  background-color: #554f48;
+  background-color: #80766b;
   color: #fff8f3;
   height: 250px;
   overflow-y: scroll;
@@ -615,52 +632,21 @@ footer {
 /* Fin titre de la page contact*/
 
 /* MAP */
-#map {
+#map-canvas {
+  color: black;
   display: block;
   width: 100%;
-  height: 350px;
+  height: 450px;
   margin: 0 auto;
   -moz-box-shadow: 0px 5px 20px #ccc;
   -webkit-box-shadow: 0px 5px 20px #ccc;
   box-shadow: 0px 5px 20px #ccc;
+  padding-right: -15px;
+  padding-left: 15px;
 }
-#map.large {
-  height: 500px;
-}
-
-.overlay {
-  display: block;
-  text-align: center;
-  color: #fff;
-  font-size: 60px;
-  line-height: 80px;
-  opacity: 0.8;
-  background: #4477aa;
-  border: solid 3px #336699;
-  border-radius: 4px;
-  box-shadow: 2px 2px 10px #333;
-  text-shadow: 1px 1px 1px #666;
-  padding: 0 4px;
-}
-
-.overlay_arrow {
-  left: 50%;
-  margin-left: -16px;
-  width: 0;
-  height: 0;
-  position: absolute;
-}
-.overlay_arrow.above {
-  bottom: -15px;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-top: 16px solid #336699;
-}
-.overlay_arrow.below {
-  top: -15px;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-bottom: 16px solid #336699;
+#contact .container-fluid {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 /* FIN MAP */
 
@@ -716,21 +702,18 @@ section#contact li:hover a.toque {
 }
 
 @media (max-width: 991px) {
-  section#contact li a.fb,
-  #socialButton ul li a.fb {
+  section#contact li a.fb {
     background: url(images/social_media.png) -256px bottom;
   }
 }
 
 @media (max-width: 991px) {
-  section#contact li a.tw,
-  #socialButton ul li a.tw {
+  section#contact li a.tw {
     background: url(images/social_media.png) -512px bottom;
   }
 }
 @media (max-width: 991px) {
-  section#contact li a.ytube,
-  #socialButton ul li a.ytube {
+  section#contact li a.ytube {
     background: url(images/social_media.png) -640px bottom;
   }
 }
@@ -739,6 +722,58 @@ section#contact li:hover a.toque {
     background: url(images/toques-blanches.png) no-repeat;
   }
 }
+/* FOOTER */
+footer {
+  background-color: #554f48;
+}
+
+.lineFooter {
+  position: absolute;
+  right: 0;
+  height: 20px;
+  width: 1px;
+  border-right: 1px solid white;
+}
+
+@media (max-width: 764px) {
+  .lineFooter {
+    display: none;
+  }
+}
+
+#socialButton ul li a {
+  display: inline-block;
+  width: 90px;
+  height: 120px;
+  transition: all 0.7s;
+  -moz-transition: all 0.7s;
+  -webkit-transition: all 0.7s;
+  -o-transition: all 0.7s;
+}
+
+#socialButton ul li a.tw {
+  background: url(images/social_mediaV2.png) -150px top;
+}
+
+#socialButton ul li a.fb {
+  background: url(images/social_mediaV2.png) -270px top;
+}
+
+#socialButton ul li a.ytube {
+  background: url(images/social_mediaV2.png) -400px top;
+}
+
+#socialButton ul li a.tw:hover {
+  background: url(images/social_mediaV2.png) -150px bottom;
+}
+
+#socialButton ul li a.fb:hover {
+  background: url(images/social_mediaV2.png) -270px bottom;
+}
+
+#socialButton ul li a.ytube:hover {
+  background: url(images/social_mediaV2.png) -400px bottom;
+}
 
 .lienFooter {
   color: #fff8f3;
@@ -746,6 +781,14 @@ section#contact li:hover a.toque {
 
 .font-50 {
   font-size: 25px;
+}
+
+footer .textFooter {
+  color: #fff8f3;
+}
+
+footer .hrFooter {
+  border: 0.5px solid #fff8f3;
 }
 /* BLOG */
 
@@ -1329,6 +1372,41 @@ body.fd-drag-active {
   animation-name: reservation__page--fade;
   animation-duration: 0.5s;
   -webkit-animation-duration: 0.5s;
+}
+
+.reservation__page--fadeOut {
+  -webkit-animation-name: reservation__page--fadeOut;
+  animation-name: reservation__page--fadeOut;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+}
+
+@-webkit-keyframes reservation__page--fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+  }
+}
+
+@keyframes reservation__page--fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+  }
 }
 
 @-webkit-keyframes reservation__page--fade {

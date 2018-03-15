@@ -8,54 +8,87 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
     <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <link rel="stylesheet" href="photoswipe/photoswipe.css">
     <link rel="stylesheet" href="photoswipe/default-skin.css">
     <link rel="stylesheet" href="style.css">
     <title>Bugs cooker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 </head>
 
 <body>
     <!-- HEADER -->
     <header>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
 
 
 
             <a class="navbar-brand" href="#">
-                <img src="images/logobugcooker_small.png">
+                <img class="marginLeft10" src="images/logobugcooker_small.png">
             </a>
             <div class="btnReservP">
                 <div class="btnReserv">
-                    <a class="btn btn-md btn-outline-secondary" href="#" role="button">Réservation</a>
+                    <a href="#" class="btn btn-lg btn-outline-light rounded-0 mt-1" role="button">Réservation</a>
                 </div>
             </div>
 
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler marginRight-10" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ml-auto placementBouton">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Accueil</a>
+                <ul class="navbar-nav ml-auto placementBouton navBarCentrage" style=" margin-top: 1px;">
+                    <li class=" nav-item">
+                        <hr class="hrMenu">
+                        <a class="nav-link js-scrollTo" href="#acceuil">Accueil</a>
+                        <hr class="hrMenu">
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Restaurant</a>
+                        <a class="nav-link js-scrollTo" href="#Restaurant">Restaurant</a>
+                        <hr class="hrMenu">
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Menus</a>
+                        <a class="nav-link js-scrollTo" href="#menu">Menus</a>
+                        <hr class="hrMenu">
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blog</a>
+                        <a class="nav-link js-scrollTo" href="#blog">Blog</a>
+                        <hr class="hrMenu">
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                    <li class="nav-item page-scroll">
+                        <a class="nav-link js-scrollTo" href="#contact">Contact</a>
+                        <hr class="hrMenu">
+                    </li>
+                    <li>
+                        <div class="container">
+                            <div class="row justify-content-md-center">
+                                <div class="col text-center noMarginNoPadding adresseNavBar">
+                                    <p class="margin100Top">33 Quai Romain Roland
+                                        <br> 69 005 LYON
+                                    </p>
+                                    <hr class="hrNavBar">
+                                    <p>06 79 83 45 15</p>
+                                    <div id="socialButtonNavBar" class="text-center">
+                                        <ul class="list-inline">
+                                            <li class="list-inline-item">
+                                                <a class='tw' href="https://twitter.com/"></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class='fb' href="https://facebook.com/"></a>
+                                            </li>
+                                            <li class="list-inline-item">
+                                                <a class='ytube' href="https://youtube.com/"></a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </li>
                 </ul>
             </div>
@@ -66,7 +99,7 @@
     <!-- CAROUSSEL -->
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner" id="acceuil">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/image08b.jpg" alt="First slide">
                 <div class="carousel-caption">
@@ -159,7 +192,7 @@
                         <p class="Restaurant__galleryZoom--display btn btn-secondary">Cliquez pour zoomer</p>
                         <div class="Restaurant__gallery Restaurant__hidden--right Restaurant__hidden" itemscope itemtype="http://schema.org/ImageGallery">
                             <figure itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
-                                <a href="images/table-ambiance-cosy.jpg" itemprop="contentUrl" data-size="1920x1155">
+                                <a href="images/table-ambiance-cosy.jpg" itemprop="contentUrl" data-size="1800x1200">
                                     <img src="images/table-ambiance-cosy.jpg" itemprop="thumbnail" alt="Entrez dans une ambiance cosy" class="Restaurant__gallery--smallImage img-fluid"
                                     />
                                 </a>
@@ -211,17 +244,13 @@
                         </div>
                     </div>
                 </div>
-
             </div>
-
-
-
 
             <div class="row">
                 <div class="col-12 card card-body Restaurant__background3">
 
                     <div class="text-center">
-                        <div class="Restaurant__hidden--left Restaurant__hidden Restaurant__text--title--border badge badge-primary badge-light display-4">
+                        <div class="Restaurant__hidden--left Restaurant__hidden Restaurant__text--title--border Restaurant__text--title--dephasage badge badge-primary badge-light display-4">
                             <h2 class="Restaurant__text--title Restaurant__text--title--secondBorder badge badge-primary badge-light display-4">Le concept du restaurant</h2>
                         </div>
 
@@ -233,14 +262,13 @@
                         </div>
                     </div>
 
-
                     <div class="row">
                         <div class="col-12 col-md-4 offset-md-1 Restaurant__text Restaurant__hidden--right Restaurant__hidden">
-                            <div class="card text-center">
-                                <div class="card-header">
+                            <div class="card text-center Restaurant__card__profils--margin">
+                                <div class="card-header Restaurant__card__profils__header">
                                     <img src="https://wildcodeschool.fr/wp-content/uploads/2017/01/Julien-Boyer-350x350.jpg" alt="Julien Boyer" class="img-fluid">
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body Restaurant__card__profils">
                                     <h3 class="card-title">Julien Boyer</h3>
                                     <p>Non aute non id duis culpa dolore laborum minim mollit culpa consectetur sit. Adipisicing
                                         commodo culpa dolor quis est aute.</p>
@@ -248,11 +276,11 @@
                             </div>
                         </div>
                         <div class="col-12 col-md-4 offset-md-2 Restaurant__text Restaurant__hidden--left Restaurant__hidden">
-                            <div class="card text-center">
-                                <div class="card-header ">
+                            <div class="card text-center Restaurant__card__profils--margin">
+                                <div class="card-header Restaurant__card__profils__header">
                                     <img src="https://wildcodeschool.fr/wp-content/uploads/2017/04/Photo-LV-350x350.jpg" alt="Laetitia Varela" class="img-fluid">
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body Restaurant__card__profils">
                                     <h3 class="card-title">Laetitia Varela</h3>
                                     <p>Esse tempor enim ad in ullamco aliqua adipisicing quis laborum sunt ex labore deserunt
                                         sint.
@@ -262,26 +290,24 @@
                         </div>
                     </div>
 
-
-
                     <div class="row">
                         <div class="col-12 col-md-4 offset-md-1 Restaurant__text Restaurant__hidden--left Restaurant__hidden">
-                            <div class="card text-center">
-                                <div class="card-header">
+                            <div class="card text-center Restaurant__card__profils--margin">
+                                <div class="card-header Restaurant__card__profils__header">
                                     <img src="images/chef-nicolas.jpg" alt="Chef Nicolas" class="img-fluid">
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body Restaurant__card__profils">
                                     <h3 class="card-title">Chef Nicolas</h3>
                                     <p>Qui ad proident quis esse commodo. Sit mollit sunt ea occaecat. </p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-4 offset-md-2 Restaurant__text Restaurant__hidden--right Restaurant__hidden">
-                            <div class="card text-center">
-                                <div class="card-header">
+                            <div class="card text-center Restaurant__card__profils--margin">
+                                <div class="card-header Restaurant__card__profils__header">
                                     <img src="images/chef-addams.jpg" alt="Chef Addams" class="img-fluid">
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body Restaurant__card__profils">
                                     <h3 class="card-title">Chef Addams</h3>
                                     <p>Mollit est cupidatat ipsum ex dolore consectetur. Consectetur veniam.</p>
                                 </div>
@@ -292,52 +318,176 @@
                 </div>
             </div>
 
-
         </div>
     </section>
     <!-- MENU -->
+
+    <!-- Plat_01 -->
 
     <section id="menu">
         <figure class="figure">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img src="images/001.jpg" class="img-fluid" alt="Responsive image">
-                        <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                        <div id="clickMenuUn">
+                            <img src="images/001b.jpg" class="img-fluid" alt="Responsive image">
+                            <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                                <h6>VOIR LE MENU</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </figure>
+
+        <div id="platUn">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="offset-2"></div>
+                    <div class="col-8">
+                        <hr>
+                        <img src="images/plat_01.jpg" class="img-fluid" alt="Responsive image" style="border: solid 1px black;">
+                        <hr>
+                        <h2>PETITS PAINS AUX SAUTERELLES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Proin pretium nulla at leo commodo, in iaculis augue ullamcorper. Quisque euismod tellus sit amet
+                            enim semper feugiat.
+                        </p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Sed pellentesque neque sed mi cursus accumsan.</p>
+                        <hr>
+                        <div id="fermerUn">
+                            <button class="draw">Fermer</button>
+                        </div>
+                    </div>
+                    <div class="offset-2"></div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <!-- plat 2 -->
+
         <figure class="figure">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img src="images/002.jpg" class="img-fluid" alt="Responsive image">
-                        <h2> ASTICOTS CREME CHAMPIGNONS </h2>
+                        <div id="clickMenuDeux">
+                            <img src="images/002b.jpg" class="img-fluid" alt="Responsive image">
+                            <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                                <h6>VOIR LE MENU</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </figure>
+
+        <div id="platDeux">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="offset-2"></div>
+                    <div class="col-8">
+                        <hr>
+                        <img src="images/plat_01.jpg" class="img-fluid" alt="Responsive image" style="border: solid 1px black;">
+                        <hr>
+                        <h2>PETITS PAINS AUX SAUTERELLES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Proin pretium nulla at leo commodo, in iaculis augue ullamcorper. Quisque euismod tellus sit amet
+                            enim semper feugiat.
+                        </p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Sed pellentesque neque sed mi cursus accumsan.</p>
+                        <hr>
+                    </div>
+                    <div class="offset-2"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Plat 3 -->
+
         <figure class="figure">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img src="images/003.jpg" class="img-fluid" alt="Responsive image">
-                        <h2> BROCHETTES DE SAUTELLES </h2>
+                        <div id="clickMenuTrois">
+                            <img src="images/003b.jpg" class="img-fluid" alt="Responsive image">
+                            <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                                <h6>VOIR LE MENU</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </figure>
+
+        <div id="platTrois">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="offset-2"></div>
+                    <div class="col-8">
+                        <hr>
+                        <img src="images/plat_01.jpg" class="img-fluid" alt="Responsive image" style="border: solid 1px black;">
+                        <hr>
+                        <h2>PETITS PAINS AUX SAUTERELLES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Proin pretium nulla at leo commodo, in iaculis augue ullamcorper. Quisque euismod tellus sit amet
+                            enim semper feugiat.
+                        </p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Sed pellentesque neque sed mi cursus accumsan.</p>
+                        <hr>
+                    </div>
+                    <div class="offset-2"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Plat 4 -->
+
         <figure class="figure">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img src="images/004.jpg" class="img-fluid" alt="Responsive image">
-                        <h2> NOS VINS ET ALCOOLS </h2>
+                        <div id="clickMenuQuatre">
+                            <img src="images/004b.jpg" class="img-fluid" alt="Responsive image">
+                            <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                                <h6>VOIR LE MENU</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </figure>
+
+        <div id="platQuatre">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="offset-2"></div>
+                    <div class="col-8">
+                        <hr>
+                        <img src="images/plat_01.jpg" class="img-fluid" alt="Responsive image" style="border: solid 1px black;">
+                        <hr>
+                        <h2>PETITS PAINS AUX SAUTERELLES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Proin pretium nulla at leo commodo, in iaculis augue ullamcorper. Quisque euismod tellus sit amet
+                            enim semper feugiat.
+                        </p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Sed pellentesque neque sed mi cursus accumsan.</p>
+                        <hr>
+                    </div>
+                    <div class="offset-2"></div>
+
+                </div>
+            </div>
+        </div>
+
+
     </section>
 
     <!-- CONTACT -->
@@ -350,7 +500,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 text-center font-50" style=" padding-top: 70px;">
-                        <h2 class="h1">Nous contacter</h2>
+                        <h2 class="h1">BUGS COOKER</h2>
                         <hr>
                         <p>33 Quai Romain Roland 69005 LYON</p>
                         <div class="separation">
@@ -361,7 +511,7 @@
                         </p>
                         <a href="mail@bugscooker.com" class="btn btn-lg btn-outline-light rounded-0" role="button">Nous contacter</a>
                         <div class="separation">
-                            <hr>
+
                         </div>
 
                     </div>
@@ -609,6 +759,140 @@
 
 
 
+    <!-- RESERVATION -->
+    <section id="reservation">
+
+        <div class="reservation__page reservation__page--hidden">
+            <div class="container-fluid">
+
+                <div class="row">
+                    <div class="d-flex ml-auto p-2">
+                        <span class="btn btn-dark btnReserv">X</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1>Réservation</h1>
+                        <p>Sit aute exercitation sint voluptate veniam occaecat proident laborum. Nisi do esse anim sit laboris
+                            labore voluptate esse. Laborum eu aute consequat ipsum fugiat aliquip occaecat dolor sunt in
+                            amet.
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card card-header">
+                            <form>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+                                        <label for="votreNom">Votre nom</label>
+                                        <input required type="text" class="reservation__input--width" id="votreNom" placeholder="ex : Jean Dupont">
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <label for="Tel">Votre téléphone</label>
+                                        <input type="text" name="Tel" class="reservation__input--width" id="Tel" placeholder="06 XX XX XX XX" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6">
+
+                                        <script src="date-picker-v5/js/datepicker.js"></script>
+                                        <label for="dp-1">Date de réservation</label>
+                                        <input type="text" class="w16em reservation__input--width" id="dp-1" name="dp-1" placeholder="JJ/MM/AAAA" />
+                                        <script type="text/javascript">
+                                            // <![CDATA[     
+                                            let opts = {
+                                                // Attach input with an id of "dp-1" and give it a "d-sl-m-sl-Y" date format (e.g. 13/03/1990)                      
+                                                formElements: {
+                                                    "dp-1": "d-sl-m-sl-Y"
+                                                }
+                                            };
+                                            datePickerController.createDatePicker(opts);
+                                            // ]]>
+                                        </script>
+                                    </div>
+                                    <div class="col-12 col-sm-6">
+                                        <label for="heure">Heure d'arrivée</label>
+                                        <select class="reservation__input--width" id="heure">
+                                            <option selected="selected">choisir...</option>
+                                            <option>12h00-12h30</option>
+                                            <option>12h30-13h00</option>
+                                            <option>13h00-13h30</option>
+                                            <option>13h30-14h00</option>
+                                            <option>19h00-19h30</option>
+                                            <option>19h30-20h00</option>
+                                            <option>20h00-20h30</option>
+                                            <option>20h30-21h00</option>
+                                            <option>21h00-21h30</option>
+                                            <option>21h30-22h00</option>
+                                            <option>22h00-22h30</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="nombreDePersonnes">Nombre de personnes</label>
+                                        <input type="number" name="nombreDePersonnes" class="reservation__input--width--uneLigne" id="nombreDePersonnes" value=1>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="messageSpecial">Pour quelle occasion?</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="Anniversaire" value="Anniversaire" class="reservation__occasion">
+                                        <label for="Anniversaire" class="reservation__occasion">Anniversaire</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="MariageFiançaille" value="MariageFiançaille" class="reservation__occasion">
+                                        <label for="Mariage-Fiançaille" class="reservation__occasion">Mariage/fiançaille</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="SoireeEntreprise" value="SoireeEntreprise" class="reservation__occasion">
+                                        <label for="SoireeEntreprise" class="reservation__occasion">Soirée d'entreprise</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="Seminaire" value="Seminaire" class="reservation__occasion">
+                                        <label for="Seminaire" class="reservation__occasion">Séminaire</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="Autre" value="Autre" class="reservation__occasion">
+                                        <label for="Autre" class="reservation__occasion">Autre</label>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-auto">
+                                        <input type="radio" name="name" id="Aucun" value="Aucun" class="reservation__occasion">
+                                        <label for="Aucun" class="reservation__occasion">Aucun</label>
+                                    </div>
+
+                                </div>
+                                <div class="form-group">
+                                    <label for="votreMessage">Un Message? (facultatif - max 100 mots)</label>
+                                    <textarea class="reservation__input--width--uneLigne" id="votreMessage" rows="3"></textarea>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 text-center reservation__submit--border">
+                        <div class="reservation__submit--border">
+                            <div class="reservation__submit--secondBorder">
+                                <button type="button" class="btn btn-danger reservation__submit">Envoyer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+    </section>
+
+
     <!-- 
     ********************************************************
     ** Plugin photoswipe à placer juste avant le </body>  **
@@ -689,6 +973,8 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMwh1usV4BZkzWUiGJhGtrv6BuGrlnP-8&callback=initMap" async
         defer></script>
+    <script src="menuscroll.js"></script>
+
 
     <!-- Script Plugin -->
 
@@ -707,10 +993,9 @@
 
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-
-
-
+    <script src="scriptmenu.js"></script>
     <script src="script.js"></script>
     <script src="scriptmap.js"></script>
     <script src="scriptcontact.js"></script>

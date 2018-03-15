@@ -25,3 +25,10 @@ $(document).ready(function() {
     $("#platQuatre").removeAttr();
   });
 });
+
+$(document).ready(function() {
+  $("#fermerUn").click(function() {
+    $("#platUn").slideToggle(1000);
+    $("#platUn").attr();
+  });
+});

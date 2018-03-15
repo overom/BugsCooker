@@ -356,17 +356,15 @@
                         <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
                         <p>Sed pellentesque neque sed mi cursus accumsan.</p>
                         <hr>
-                    </div>
-                    <div class="offset-2"></div>
-                    <div class="row text-center">
-                        <div class="col-2">
-                            <img src="" alt="">
+                        <div id="fermerUn">
+                            <button class="draw">Fermer</button>
                         </div>
                     </div>
-
-
+                    <div class="offset-2"></div>
                 </div>
+
             </div>
+        </div>
         </div>
 
         <!-- plat 2 -->
@@ -804,7 +802,9 @@
                                             // <![CDATA[     
                                             let opts = {
                                                 // Attach input with an id of "dp-1" and give it a "d-sl-m-sl-Y" date format (e.g. 13/03/1990)                      
-                                                formElements: { "dp-1": "d-sl-m-sl-Y" }
+                                                formElements: {
+                                                    "dp-1": "d-sl-m-sl-Y"
+                                                }
                                             };
                                             datePickerController.createDatePicker(opts);
                                             // ]]>

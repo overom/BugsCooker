@@ -526,7 +526,7 @@ a.ytube,
   color: black;
   width: 40%;
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 30px;
 }
 
 #platUn p,
@@ -549,8 +549,11 @@ a.ytube,
   font-size: 2.5rem;
 }
 
-#fermerUn {
-  padding-bottom: 30px;
+#fermerUn,
+#fermerDeux,
+#fermerTrois,
+#fermerQuatre {
+  padding-bottom: 80px;
 }
 
 /* bouton ferme */

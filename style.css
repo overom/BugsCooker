@@ -276,10 +276,32 @@ a.ytube,
 .Restaurant__card__profils {
   background-color: #80766b;
   color: #fff8f3;
-  height: 250px;
+  height: 180px;
   overflow-y: scroll;
   overflow: -moz-scrollbars-vertical;
   margin-bottom: 0px;
+}
+
+@media (min-width: 576px) {
+  .Restaurant__card__profils {
+    background-color: #80766b;
+    color: #fff8f3;
+    height: 200px;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-vertical;
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: 768px) {
+  .Restaurant__card__profils {
+    background-color: #80766b;
+    color: #fff8f3;
+    height: 220px;
+    overflow-y: scroll;
+    overflow: -moz-scrollbars-vertical;
+    margin-bottom: 0px;
+  }
 }
 
 .Restaurant__card__profils--margin {

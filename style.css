@@ -397,12 +397,25 @@ a.ytube,
 
 @media (max-width: 991px) {
   #menu .figure h2 {
-    font-size: 1.6rem !important;
+    font-size: 2rem !important;
     display: block;
-    padding-bottom: 45px;
+    padding-top: 30px;
   }
   #menu .figure h6 {
+    margin-top: 10px;
+    font-size: 1.2rem !important;
+  }
+}
+
+@media (max-width: 479px) {
+  #menu .figure h2 {
     font-size: 1rem !important;
+    display: block;
+    padding-top: 30px;
+  }
+  #menu .figure h6 {
+    margin-top: 10px;
+    font-size: 0.8rem !important;
   }
 }
 

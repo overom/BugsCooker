@@ -106,6 +106,10 @@ header .btnReserv {
   padding-bottom: 4px;
 }
 
+.debugButton {
+  outline: none !important;
+}
+
 /*LOGO POUR LE MENU */
 #socialButtonNavBar ul li a {
   display: inline-block;
@@ -644,10 +648,7 @@ footer {
   padding-right: -15px;
   padding-left: 15px;
 }
-#contact .container-fluid {
-  padding-right: 0px;
-  padding-left: 0px;
-}
+
 /* FIN MAP */
 
 /*social media icons - CSS animation */

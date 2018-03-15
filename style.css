@@ -142,6 +142,10 @@ a.ytube,
 
 /* Carousel */
 
+#accueil .d-block {
+  margin-top: 80px;
+}
+
 .carousel-caption p {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

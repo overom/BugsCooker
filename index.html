@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="photoswipe/default-skin.css">
     <link rel="stylesheet" href="style.css">
     <title>Bugs cooker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -41,25 +43,25 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto placementBouton navBarCentrage" style=" margin-top: 1px;">
-                    <li class=" nav-item ">
+                    <li class=" nav-item">
                         <hr class="hrMenu">
-                        <a class="nav-link " href="# ">Accueil</a>
-                        <hr class="hrMenu">
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Restaurant</a>
+                        <a class="nav-link js-scrollTo" href="#acceuil">Accueil</a>
                         <hr class="hrMenu">
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Menus</a>
+                    <li class="nav-item">
+                        <a class="nav-link js-scrollTo" href="#Restaurant">Restaurant</a>
                         <hr class="hrMenu">
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Blog</a>
+                    <li class="nav-item">
+                        <a class="nav-link js-scrollTo" href="#menu">Menus</a>
                         <hr class="hrMenu">
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link js-scrollTo" href="#blog">Blog</a>
+                        <hr class="hrMenu">
+                    </li>
+                    <li class="nav-item page-scroll">
+                        <a class="nav-link js-scrollTo" href="#contact">Contact</a>
                         <hr class="hrMenu">
                     </li>
                     <li>
@@ -97,7 +99,7 @@
     <!-- CAROUSSEL -->
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner" id="acceuil">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/image08b.jpg" alt="First slide">
                 <div class="carousel-caption">
@@ -320,13 +322,15 @@
     </section>
     <!-- MENU -->
 
+    <!-- Plat_01 -->
+
     <section id="menu">
         <figure class="figure">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <div id="clickMenu">
-                            <img src="images/001.jpg" class="img-fluid" alt="Responsive image">
+                        <div id="clickMenuUn">
+                            <img src="images/001b.jpg" class="img-fluid" alt="Responsive image">
                             <h2> PETITS PAINS AUX SAUTERELLES </h1>
                                 <h6>VOIR LE MENU</h6>
                         </div>
@@ -335,9 +339,53 @@
             </div>
         </figure>
 
-        <!-- Plat_01 -->
-
         <div id="platUn">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="offset-2"></div>
+                    <div class="col-8">
+                        <hr>
+                        <img src="images/plat_01.jpg" class="img-fluid" alt="Responsive image" style="border: solid 1px black;">
+                        <hr>
+                        <h2>PETITS PAINS AUX SAUTERELLES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Proin pretium nulla at leo commodo, in iaculis augue ullamcorper. Quisque euismod tellus sit amet
+                            enim semper feugiat.
+                        </p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Sed pellentesque neque sed mi cursus accumsan.</p>
+                        <hr>
+                    </div>
+                    <div class="offset-2"></div>
+                    <div class="row text-center">
+                        <div class="col-2">
+                            <img src="" alt="">
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <!-- plat 2 -->
+
+        <figure class="figure">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div id="clickMenuDeux">
+                            <img src="images/002b.jpg" class="img-fluid" alt="Responsive image">
+                            <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                                <h6>VOIR LE MENU</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </figure>
+
+        <div id="platDeux">
             <div class="container">
                 <div class="row text-center">
                     <div class="offset-2"></div>
@@ -361,36 +409,87 @@
             </div>
         </div>
 
+        <!-- Plat 3 -->
+
         <figure class="figure">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img src="images/002.jpg" class="img-fluid" alt="Responsive image">
-                        <h2> ASTICOTS CREME CHAMPIGNONS </h2>
+                        <div id="clickMenuTrois">
+                            <img src="images/003b.jpg" class="img-fluid" alt="Responsive image">
+                            <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                                <h6>VOIR LE MENU</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </figure>
+
+        <div id="platTrois">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="offset-2"></div>
+                    <div class="col-8">
+                        <hr>
+                        <img src="images/plat_01.jpg" class="img-fluid" alt="Responsive image" style="border: solid 1px black;">
+                        <hr>
+                        <h2>PETITS PAINS AUX SAUTERELLES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Proin pretium nulla at leo commodo, in iaculis augue ullamcorper. Quisque euismod tellus sit amet
+                            enim semper feugiat.
+                        </p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Sed pellentesque neque sed mi cursus accumsan.</p>
+                        <hr>
+                    </div>
+                    <div class="offset-2"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Plat 4 -->
+
         <figure class="figure">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img src="images/003.jpg" class="img-fluid" alt="Responsive image">
-                        <h2> BROCHETTES DE SAUTELLES </h2>
+                        <div id="clickMenuQuatre">
+                            <img src="images/004b.jpg" class="img-fluid" alt="Responsive image">
+                            <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                                <h6>VOIR LE MENU</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </figure>
-        <figure class="figure">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <img src="images/004.jpg" class="img-fluid" alt="Responsive image">
-                        <h2> NOS VINS ET ALCOOLS </h2>
+
+        <div id="platQuatre">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="offset-2"></div>
+                    <div class="col-8">
+                        <hr>
+                        <img src="images/plat_01.jpg" class="img-fluid" alt="Responsive image" style="border: solid 1px black;">
+                        <hr>
+                        <h2>PETITS PAINS AUX SAUTERELLES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Proin pretium nulla at leo commodo, in iaculis augue ullamcorper. Quisque euismod tellus sit amet
+                            enim semper feugiat.
+                        </p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Sed pellentesque neque sed mi cursus accumsan.</p>
+                        <hr>
                     </div>
+                    <div class="offset-2"></div>
+
                 </div>
             </div>
-        </figure>
+        </div>
+
+
     </section>
 
     <!-- CONTACT -->
@@ -871,6 +970,7 @@
 
 
 
+    <script src="menuscroll.js"></script>
 
 
     <!-- Script Plugin -->
@@ -890,9 +990,8 @@
 
 
 
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="scriptmenu.js"></script>
     <script src="script.js"></script>
     <script src="scriptmap.js"></script>

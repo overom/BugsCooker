@@ -736,28 +736,29 @@ footer {
 }
 
 #socialButton ul li a.tw {
-  background: url(images/social_mediaV2.png) 0px top;
+  background: url(images/social_mediaV2.png) -150px top;
 }
 
 #socialButton ul li a.fb {
-  background: url(images/social_mediaV2.png) -260px top;
+  background: url(images/social_mediaV2.png) -270px top;
 }
 
 #socialButton ul li a.ytube {
-  background: url(images/social_mediaV2.png) -390px top;
+  background: url(images/social_mediaV2.png) -400px top;
 }
 
 #socialButton ul li a.tw:hover {
-  background: url(images/social_mediaV2.png) -30px bottom;
+  background: url(images/social_mediaV2.png) -150px bottom;
 }
 
 #socialButton ul li a.fb:hover {
-  background: url(images/social_mediaV2.png) -260px bottom;
+  background: url(images/social_mediaV2.png) -270px bottom;
 }
 
 #socialButton ul li a.ytube:hover {
-  background: url(images/social_mediaV2.png) -390px bottom;
+  background: url(images/social_mediaV2.png) -400px bottom;
 }
+
 .lienFooter {
   color: #fff8f3;
 }

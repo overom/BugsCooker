@@ -1238,6 +1238,41 @@ body.fd-drag-active {
   -webkit-animation-duration: 0.5s;
 }
 
+.reservation__page--fadeOut {
+  -webkit-animation-name: reservation__page--fadeOut;
+  animation-name: reservation__page--fadeOut;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+}
+
+@-webkit-keyframes reservation__page--fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+  }
+}
+
+@keyframes reservation__page--fadeOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.7);
+    -webkit-transform: scale(0.7);
+  }
+}
+
 @-webkit-keyframes reservation__page--fade {
   from {
     opacity: 0;

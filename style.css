@@ -53,16 +53,17 @@
 */
 
 /* Carousel */
+#carouselExampleControls {
+  padding-top: 10px;
+}
 .carousel-caption p {
   font-family: "Arial";
-  font-size: 2vw;
-  text-shadow: 0px 0px 9px black;
+  font-size: 1.8vw;
 }
 
 .carousel-caption h1 {
   font-family: "Fuji";
   font-size: 6vw;
-  text-shadow: 0px 0px 9px black;
 }
 .carousel-caption {
   bottom: 50%;

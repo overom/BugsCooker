@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="photoswipe/default-skin.css">
     <link rel="stylesheet" href="style.css">
     <title>Bugs cooker</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
 </head>
 
 <body>
@@ -41,25 +43,25 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto placementBouton navBarCentrage" style=" margin-top: 1px;">
-                    <li class=" nav-item ">
+                    <li class=" nav-item">
                         <hr class="hrMenu">
-                        <a class="nav-link " href="# ">Accueil</a>
-                        <hr class="hrMenu">
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Restaurant</a>
+                        <a class="nav-link js-scrollTo" href="#acceuil">Accueil</a>
                         <hr class="hrMenu">
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Menus</a>
+                    <li class="nav-item">
+                        <a class="nav-link js-scrollTo" href="#Restaurant">Restaurant</a>
                         <hr class="hrMenu">
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Blog</a>
+                    <li class="nav-item">
+                        <a class="nav-link js-scrollTo" href="#menu">Menus</a>
                         <hr class="hrMenu">
                     </li>
-                    <li class="nav-item ">
-                        <a class="nav-link " href="# ">Contact</a>
+                    <li class="nav-item">
+                        <a class="nav-link js-scrollTo" href="#blog">Blog</a>
+                        <hr class="hrMenu">
+                    </li>
+                    <li class="nav-item page-scroll">
+                        <a class="nav-link js-scrollTo" href="#contact">Contact</a>
                         <hr class="hrMenu">
                     </li>
                     <li>
@@ -97,25 +99,25 @@
     <!-- CAROUSSEL -->
 
     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner">
+        <div class="carousel-inner" id="acceuil">
             <div class="carousel-item active">
                 <img class="d-block w-100" src="images/image08b.jpg" alt="First slide">
                 <div class="carousel-caption">
-                    <h1>Bug Cooker, Lyon</h1>
+                    <h1>Bugs Cooker</h1>
                     <p>une expérience inédite</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="images/insecte2b.jpg" alt="Second slide">
                 <div class="carousel-caption">
-                    <h1>Bug Cooker, Lyon</h1>
+                    <h1>Bugs Cooker</h1>
                     <p>dans un restaurant gastronomique</p>
                 </div>
             </div>
             <div class="carousel-item">
                 <img class="d-block w-100" src="images/image02b.jpg" alt="Third slide">
                 <div class="carousel-caption">
-                    <h1>Bug Cooker, Lyon</h1>
+                    <h1>Bugs Cooker</h1>
                     <p>avec des chefs d'exceptions</p>
                 </div>
             </div>
@@ -136,16 +138,15 @@
             <div class="row">
                 <div class="col-12 card card-body Restaurant__background1 Restaurant__sectionDuGerant--padding">
                     <div class="Restaurant__sectionDuGerant text-center">
-                        <div class="Restaurant__text--title--dephasage Restaurant__hidden--right
-                            Restaurant__hidden Restaurant__text--title--border badge badge-primary badge-light display-4">
+                        <div class="Restaurant__text--title--dephasage Restaurant__text--title--border badge badge-primary badge-light display-4 Restaurant__text--fadeInRight">
                             <h2 class="Restaurant__text--title Restaurant__text--title--secondBorder badge badge-primary badge-light display-4">Le Restaurant</h2>
                         </div>
-                        <div class="Restaurant__hidden--up Restaurant__hidden Restaurant__textDuGerant">
+                        <div class="Restaurant__textDuGerant Restaurant__text--fadeInUp Restaurant__text--beige">
                             <p>« Culpa consectetur tempor qui eu cillum labore consectetur adipisicing qui anim quis culpa elit
                                 exercitation. Excepteur eu aute culpa pariatur. Occaecat nostrud elit Lorem enim enim qui
                                 adipisicing non reprehenderit consequat incididunt duis. »
                             </p>
-                            <p class="Restaurant__text--sign">
+                            <p class="Restaurant__text--sign Restaurant__text--beige">
                                 Le gérant.
                             </p>
                         </div>
@@ -252,7 +253,7 @@
                             <h2 class="Restaurant__text--title Restaurant__text--title--secondBorder badge badge-primary badge-light display-4">Le concept du restaurant</h2>
                         </div>
 
-                        <div class="Restaurant__text Restaurant__hidden--up Restaurant__hidden">
+                        <div class="Restaurant__text Restaurant__hidden--up Restaurant__hidden Restaurant__text--beige">
                             <p>Id et adipisicing ullamco exercitation ullamco elit cupidatat pariatur eu esse. Mollit commodo
                                 excepteur veniam anim laborum aute mollit. Irure officia eiusmod in mollit velit enim aliqua.
                                 Ipsum amet nulla commodo non. Do aliqua non ipsum commodo irure aliqua est eu esse et culpa.
@@ -261,7 +262,7 @@
                     </div>
 
                     <div class="row">
-                        <div class="col-12 col-md-4 offset-md-1 Restaurant__text Restaurant__hidden--right Restaurant__hidden">
+                        <div class="col-12 col-sm-6 col-md-3 Restaurant__text Restaurant__hidden--right Restaurant__hidden">
                             <div class="card text-center Restaurant__card__profils--margin">
                                 <div class="card-header Restaurant__card__profils__header">
                                     <img src="https://wildcodeschool.fr/wp-content/uploads/2017/01/Julien-Boyer-350x350.jpg" alt="Julien Boyer" class="img-fluid">
@@ -273,7 +274,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 offset-md-2 Restaurant__text Restaurant__hidden--left Restaurant__hidden">
+                        <div class="col-12 col-sm-6 col-md-3 Restaurant__text Restaurant__hidden--left Restaurant__hidden">
                             <div class="card text-center Restaurant__card__profils--margin">
                                 <div class="card-header Restaurant__card__profils__header">
                                     <img src="https://wildcodeschool.fr/wp-content/uploads/2017/04/Photo-LV-350x350.jpg" alt="Laetitia Varela" class="img-fluid">
@@ -286,10 +287,9 @@
                                 </div>
                             </div>
                         </div>
-                    </div>
 
-                    <div class="row">
-                        <div class="col-12 col-md-4 offset-md-1 Restaurant__text Restaurant__hidden--left Restaurant__hidden">
+
+                        <div class="col-12 col-sm-6 col-md-3 Restaurant__text Restaurant__hidden--right Restaurant__hidden">
                             <div class="card text-center Restaurant__card__profils--margin">
                                 <div class="card-header Restaurant__card__profils__header">
                                     <img src="images/chef-nicolas.jpg" alt="Chef Nicolas" class="img-fluid">
@@ -300,7 +300,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-4 offset-md-2 Restaurant__text Restaurant__hidden--right Restaurant__hidden">
+                        <div class="col-12 col-sm-6 col-md-3 Restaurant__text Restaurant__hidden--left Restaurant__hidden">
                             <div class="card text-center Restaurant__card__profils--margin">
                                 <div class="card-header Restaurant__card__profils__header">
                                     <img src="images/chef-addams.jpg" alt="Chef Addams" class="img-fluid">
@@ -320,13 +320,15 @@
     </section>
     <!-- MENU -->
 
+    <!-- Plat_01 -->
+
     <section id="menu">
         <figure class="figure">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <div id="clickMenu">
-                            <img src="images/001.jpg" class="img-fluid" alt="Responsive image">
+                        <div id="clickMenuUn">
+                            <img src="images/001b.jpg" class="img-fluid" alt="Responsive image">
                             <h2> PETITS PAINS AUX SAUTERELLES </h1>
                                 <h6>VOIR LE MENU</h6>
                         </div>
@@ -335,9 +337,51 @@
             </div>
         </figure>
 
-        <!-- Plat_01 -->
-
         <div id="platUn">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="offset-2"></div>
+                    <div class="col-8">
+                        <hr>
+                        <img src="images/plat_01.jpg" class="img-fluid" alt="Responsive image" style="border: solid 1px black;">
+                        <hr>
+                        <h2>PETITS PAINS AUX SAUTERELLES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Proin pretium nulla at leo commodo, in iaculis augue ullamcorper. Quisque euismod tellus sit amet
+                            enim semper feugiat.
+                        </p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Sed pellentesque neque sed mi cursus accumsan.</p>
+                        <hr>
+                        <div id="fermerUn">
+                            <button class="draw">Fermer</button>
+                        </div>
+                    </div>
+                    <div class="offset-2"></div>
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+        <!-- plat 2 -->
+
+        <figure class="figure">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <div id="clickMenuDeux">
+                            <img src="images/002b.jpg" class="img-fluid" alt="Responsive image">
+                            <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                                <h6>VOIR LE MENU</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </figure>
+
+        <div id="platDeux">
             <div class="container">
                 <div class="row text-center">
                     <div class="offset-2"></div>
@@ -361,36 +405,87 @@
             </div>
         </div>
 
+        <!-- Plat 3 -->
+
         <figure class="figure">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img src="images/002.jpg" class="img-fluid" alt="Responsive image">
-                        <h2> ASTICOTS CREME CHAMPIGNONS </h2>
+                        <div id="clickMenuTrois">
+                            <img src="images/003b.jpg" class="img-fluid" alt="Responsive image">
+                            <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                                <h6>VOIR LE MENU</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </figure>
+
+        <div id="platTrois">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="offset-2"></div>
+                    <div class="col-8">
+                        <hr>
+                        <img src="images/plat_01.jpg" class="img-fluid" alt="Responsive image" style="border: solid 1px black;">
+                        <hr>
+                        <h2>PETITS PAINS AUX SAUTERELLES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Proin pretium nulla at leo commodo, in iaculis augue ullamcorper. Quisque euismod tellus sit amet
+                            enim semper feugiat.
+                        </p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Sed pellentesque neque sed mi cursus accumsan.</p>
+                        <hr>
+                    </div>
+                    <div class="offset-2"></div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Plat 4 -->
+
         <figure class="figure">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-12 text-center">
-                        <img src="images/003.jpg" class="img-fluid" alt="Responsive image">
-                        <h2> BROCHETTES DE SAUTELLES </h2>
+                        <div id="clickMenuQuatre">
+                            <img src="images/004b.jpg" class="img-fluid" alt="Responsive image">
+                            <h2> PETITS PAINS AUX SAUTERELLES </h1>
+                                <h6>VOIR LE MENU</h6>
+                        </div>
                     </div>
                 </div>
             </div>
         </figure>
-        <figure class="figure">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-12 text-center">
-                        <img src="images/004.jpg" class="img-fluid" alt="Responsive image">
-                        <h2> NOS VINS ET ALCOOLS </h2>
+
+        <div id="platQuatre">
+            <div class="container">
+                <div class="row text-center">
+                    <div class="offset-2"></div>
+                    <div class="col-8">
+                        <hr>
+                        <img src="images/plat_01.jpg" class="img-fluid" alt="Responsive image" style="border: solid 1px black;">
+                        <hr>
+                        <h2>PETITS PAINS AUX SAUTERELLES</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Proin pretium nulla at leo commodo, in iaculis augue ullamcorper. Quisque euismod tellus sit amet
+                            enim semper feugiat.
+                        </p>
+                        <img src="images/fourchette_BD.png" class="img-fluid" alt="Responsive image">
+                        <p>Sed pellentesque neque sed mi cursus accumsan.</p>
+                        <hr>
                     </div>
+                    <div class="offset-2"></div>
+
                 </div>
             </div>
-        </figure>
+        </div>
+
+
     </section>
 
     <!-- CONTACT -->
@@ -456,11 +551,12 @@
                 <div class="row">
                     <div class="col">
                         <div class="span11">
-                            <div id="map"></div>
+                            <div id="map-canvas"></div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <!-- fin Map -->
         </section>
     </div>
@@ -703,7 +799,9 @@
                                             // <![CDATA[     
                                             let opts = {
                                                 // Attach input with an id of "dp-1" and give it a "d-sl-m-sl-Y" date format (e.g. 13/03/1990)                      
-                                                formElements: { "dp-1": "d-sl-m-sl-Y" }
+                                                formElements: {
+                                                    "dp-1": "d-sl-m-sl-Y"
+                                                }
                                             };
                                             datePickerController.createDatePicker(opts);
                                             // ]]>
@@ -869,6 +967,9 @@
 
 
 
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMwh1usV4BZkzWUiGJhGtrv6BuGrlnP-8&callback=initMap" async
+        defer></script>
+    <script src="menuscroll.js"></script>
 
 
     <!-- Script Plugin -->
@@ -888,9 +989,8 @@
 
 
 
-
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script src="scriptmenu.js"></script>
     <script src="script.js"></script>
     <script src="scriptmap.js"></script>

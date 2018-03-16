@@ -11,7 +11,9 @@ nav {
   background-color: #fff8f3 !important;
   padding-right: 0px !important;
   padding-left: 0px !important;
-  font-family: Fuji;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fuji", Arial, Helvetica, sans-serif;
 }
 
 .noMarginNoPadding {

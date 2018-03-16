@@ -731,10 +731,10 @@ footer {
 /*social media icons - CSS animation */
 
 section#contact ul a,
-#socialButton ul li a {
+#logoSociauxContact ul li a {
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: 118px;
+  height: 118px;
   transition: all 0.7s;
   -moz-transition: all 0.7s;
   -webkit-transition: all 0.7s;
@@ -757,17 +757,17 @@ a.ytube,
 }
 
 a.toque {
-  background: url(images/toques-blanches-nb.png) no-repeat;
+  background: url(images/toques-blanches-nb.png) 20px top no-repeat;
 }
 
 a.tripA {
   background: url(images/logo_tripA.png) 0px top no-repeat;
-  background-size: 120%;
+  background-size: 100%;
 }
 
-/*a.fourchette {
-  background: url(images/toques-blanches-nb.png) no-repeat;
-}*/
+a.fourchette {
+  background: url(images/logo_lafouchette_nb.png) no-repeat;
+}
 
 section#contact li:hover a.fb,
 #socialButton ul li a.tw:hover {
@@ -785,16 +785,15 @@ section#contact li:hover a.ytube,
 }
 
 section#contact li:hover a.toque {
-  background: url(images/toques-blanches.png) no-repeat;
+  background: url(images/toques-blanches.png) 20px top no-repeat;
 }
 
 section#contact li:hover a.tripA {
   background: url(images/logo_tripA.png) 0px top no-repeat;
-  background-size: 120%;
+  background-size: 100%;
 }
 section#contact li:hover a.fourchette {
-  background: url(images/logo_tripA.png) 0px top no-repeat;
-  background-size: 120%;
+  background: url(images/logo_lafouchette.png) 0px top no-repeat;
 }
 
 @media (max-width: 991px) {

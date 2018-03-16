@@ -8,7 +8,7 @@
     <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
     <link rel="stylesheet" href="photoswipe/photoswipe.css">
     <link rel="stylesheet" href="photoswipe/default-skin.css">
     <link rel="stylesheet" href="style.css">
@@ -26,7 +26,7 @@
 
 
             <a class="navbar-brand" href="#">
-                <img class="marginLeft10" src="images/bugcooker_small.png">
+                <img class="marginLeft10" src="images/bugcooker_small.png" alt="logo bug cookers">
             </a>
             <div class="btnReservP">
                 <div class="btnReserv">
@@ -381,7 +381,7 @@ font-family: “PT Serif”, Arial, Helvetica, sans-serif;">Nos menus</h2>
 
             </div>
         </div>
-        </div>
+
 
         <!-- plat 2 -->
 
@@ -605,10 +605,9 @@ font-family: “PT Serif”, Arial, Helvetica, sans-serif;">Nos menus</h2>
                     </div>
                 </div>
             </div>
-    </div>
+        </section>
     </div>
     <!-- fin Map -->
-    </section>
 
 
     <!-- BLOG -->
@@ -680,40 +679,40 @@ font-family: “PT Serif”, Arial, Helvetica, sans-serif;">Nos menus</h2>
 
                                 <hr>
                                 <p>
-                                    </br>
+                                    <br/>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    </br>
+                                    <br/>
                                 </p>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content, as asef lead-in to
                                     additional. With supporting text below as a natural lead-in to additional content.
-                                    </br>
+                                    <br/>
                                     <span class="d-block text-right pr-5 mr-4">12/03/2018</span>
                                     <span class="d-block text-right pr-5 mr-4">Roxane</span>
                                 </p>
 
-                                <br>
+                                <br/>
 
                                 <p>
-                                    </br>
+                                    <br/>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
                                     <i class="fas fa-star"></i>
-                                    </br>
+                                    <br/>
                                 </p>
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content, as asef lead-in to
                                     additional. With supporting text below as a natural lead-in to additional content.
-                                    </br>
+                                    <br/>
                                     <span class="d-block text-right pr-5 mr-4">09/03/2018</span>
                                     <span class="d-block text-right pr-5 mr-4">Ando</span>
                                 </p>
 
-                                <br>
+                                <br/>
 
                                 <a href="https://www.tripadvisor.fr/" target="_blank" class="btn btn-outline-light rounded-0">EN SAVOIR PLUS</a>
                             </div>
@@ -828,7 +827,7 @@ font-family: “PT Serif”, Arial, Helvetica, sans-serif;">Nos menus</h2>
                 </div>
                 <div class="row">
                     <div class="col-12 text-center">
-                        <h1>Réservation</h1>
+                        <h2>Réservation</h2>
                         <p>Sit aute exercitation sint voluptate veniam occaecat proident laborum. Nisi do esse anim sit laboris
                             labore voluptate esse. Laborum eu aute consequat ipsum fugiat aliquip occaecat dolor sunt in
                             amet.
@@ -855,7 +854,7 @@ font-family: “PT Serif”, Arial, Helvetica, sans-serif;">Nos menus</h2>
                                         <script src="date-picker-v5/js/datepicker.js"></script>
                                         <label for="dp-1">Date de réservation</label>
                                         <input type="text" class="w16em reservation__input--width" id="dp-1" name="dp-1" placeholder="JJ/MM/AAAA" />
-                                        <script type="text/javascript">
+                                        <script>
                                             // <![CDATA[     
                                             let opts = {
                                                 // Attach input with an id of "dp-1" and give it a "d-sl-m-sl-Y" date format (e.g. 13/03/1990)                      
@@ -893,7 +892,7 @@ font-family: “PT Serif”, Arial, Helvetica, sans-serif;">Nos menus</h2>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                        <label for="messageSpecial">Pour quelle occasion?</label>
+                                        <label>Pour quelle occasion?</label>
                                     </div>
                                 </div>
                                 <div class="row">
@@ -903,7 +902,7 @@ font-family: “PT Serif”, Arial, Helvetica, sans-serif;">Nos menus</h2>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
                                         <input type="radio" name="name" id="MariageFiançaille" value="MariageFiançaille" class="reservation__occasion">
-                                        <label for="Mariage-Fiançaille" class="reservation__occasion">Mariage/fiançaille</label>
+                                        <label for="MariageFiançaille" class="reservation__occasion">Mariage/fiançaille</label>
                                     </div>
                                     <div class="col-12 col-sm-6 col-md-auto">
                                         <input type="radio" name="name" id="SoireeEntreprise" value="SoireeEntreprise" class="reservation__occasion">
@@ -996,7 +995,7 @@ font-family: “PT Serif”, Arial, Helvetica, sans-serif;">Nos menus</h2>
                     <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
 
                     <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                    <!-- element will get class pswp__preloader--active when preloader is running -->
+                    <!-- element will get class pswp__preloader-.-active when preloader is running -->
 
                     <div class="pswp__preloader">
                         <div class="pswp__preloader__icn">

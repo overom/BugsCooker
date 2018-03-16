@@ -698,7 +698,13 @@ footer {
   border: 0.5px solid #fff8f3;
   max-width: 20%;
 }
-*/
+
+@media (max-width: 1007px) {
+  .positionLogoTB {
+    position: relative;
+    left: 15px;
+  }
+}
 
 /* Titre de la page : contact */
 
@@ -728,20 +734,16 @@ footer {
   -webkit-box-shadow: 0px 5px 20px #ccc;
   box-shadow: 0px 5px 20px #ccc;
 }
-.containerMap {
-  padding-right: 0px;
-  padding-left: 0px;
-}
 
 /* FIN MAP */
 
 /*social media icons - CSS animation */
 
 section#contact ul a,
-#socialButton ul li a {
+#logoSociauxContact ul li a {
   display: inline-block;
-  width: 128px;
-  height: 128px;
+  width: 118px;
+  height: 118px;
   transition: all 0.7s;
   -moz-transition: all 0.7s;
   -webkit-transition: all 0.7s;
@@ -764,7 +766,17 @@ a.ytube,
 }
 
 a.toque {
-  background: url(images/toques-blanches-nb.png) no-repeat;
+  background: url(images/toques-blanches-nb.png) 20px top no-repeat;
+}
+
+a.tripA {
+  background: url(images/logo_tripA_nb.png) 0px top no-repeat;
+  background-size: 105%;
+}
+
+a.fourchette {
+  background: url(images/logo_lafouchette_nb.png) no-repeat;
+  background-size: 90%;
 }
 
 section#contact li:hover a.fb,
@@ -783,30 +795,41 @@ section#contact li:hover a.ytube,
 }
 
 section#contact li:hover a.toque {
-  background: url(images/toques-blanches.png) no-repeat;
+  background: url(images/toques-blanches.png) 20px top no-repeat;
+}
+
+section#contact li:hover a.tripA {
+  background: url(images/logo_tripA.png) 0px top no-repeat;
+  background-size: 105%;
+}
+section#contact li:hover a.fourchette {
+  background: url(images/logo_lafourchette.png) no-repeat;
+  background-size: 90%;
 }
 
 @media (max-width: 991px) {
   section#contact li a.fb {
     background: url(images/social_media.png) -256px bottom;
   }
-}
-
-@media (max-width: 991px) {
   section#contact li a.tw {
     background: url(images/social_media.png) -512px bottom;
   }
-}
-@media (max-width: 991px) {
   section#contact li a.ytube {
     background: url(images/social_media.png) -640px bottom;
   }
-}
-@media (max-width: 991px) {
   section#contact li a.toque {
     background: url(images/toques-blanches.png) no-repeat;
   }
+  a.tripA {
+    background: url(images/logo_tripA.png) 0px top no-repeat;
+    background-size: 105%;
+  }
+  a.fourchette {
+    background: url(images/logo_lafourchette.png) no-repeat;
+    background-size: 90%;
+  }
 }
+
 /* FOOTER */
 footer {
   background-color: #554f48;

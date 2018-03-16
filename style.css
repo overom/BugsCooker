@@ -154,7 +154,9 @@ a.ytube,
 }
 
 .carousel-caption h1 {
-  font-family: "Fuji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "Fuji", Arial, Helvetica, sans-serif;
   font-size: 6vw;
 }
 .carousel-caption {
@@ -549,6 +551,8 @@ h2 .badge-light {
 #platDeux p,
 #platTrois p,
 #platQuatre p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   font-family: "PT Serif Caption", serif;
   color: #554f48;
   margin-top: 25px;
@@ -676,8 +680,10 @@ button::after {
 }
 
 /* contact */
-footer {
-  background-color: #000;
+#contact {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "fuji", Arial, Helvetica, sans-serif;
 }
 
 .sectionContact {
@@ -957,8 +963,6 @@ footer .hrFooter {
 }
 
 #avis p {
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: "PT Serif", Arial, Helvetica, sans-serif;
@@ -1426,6 +1430,12 @@ body.fd-drag-active {
 }
 
 /* RESERVATION  */
+#reservation p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: "PT Serif", Arial, Helvetica, sans-serif;
+  color: #fff;
+}
 
 #reservation .card-header {
   margin: 10px 0 10px 0;

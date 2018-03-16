@@ -734,7 +734,10 @@ footer {
   -webkit-box-shadow: 0px 5px 20px #ccc;
   box-shadow: 0px 5px 20px #ccc;
 }
-
+.containerMap {
+  padding-left: 0px;
+  padding-right: 0px;
+}
 /* FIN MAP */
 
 /*social media icons - CSS animation */

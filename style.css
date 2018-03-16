@@ -750,6 +750,15 @@ a.toque {
   background: url(images/toques-blanches-nb.png) no-repeat;
 }
 
+a.tripA {
+  background: url(images/logo_tripA.png) 0px top no-repeat;
+  background-size: 120%;
+}
+
+/*a.fourchette {
+  background: url(images/toques-blanches-nb.png) no-repeat;
+}*/
+
 section#contact li:hover a.fb,
 #socialButton ul li a.tw:hover {
   background: url(images/social_media.png) -256px bottom;
@@ -767,6 +776,15 @@ section#contact li:hover a.ytube,
 
 section#contact li:hover a.toque {
   background: url(images/toques-blanches.png) no-repeat;
+}
+
+section#contact li:hover a.tripA {
+  background: url(images/logo_tripA.png) 0px top no-repeat;
+  background-size: 120%;
+}
+section#contact li:hover a.fourchette {
+  background: url(images/logo_tripA.png) 0px top no-repeat;
+  background-size: 120%;
 }
 
 @media (max-width: 991px) {

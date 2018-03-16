@@ -36,7 +36,7 @@ nav {
 }
 
 header .hrMenu {
-  border: 1px solid #554f48;
+  border: 0.5px solid #554f48;
   position: absolute;
   right: 0%;
   width: 1500px;
@@ -464,6 +464,7 @@ h2 .badge-light {
   #menu .figure h6 {
     margin-top: 10px;
     font-size: 1.2rem !important;
+    cursor: pointer;
   }
 }
 
@@ -476,6 +477,7 @@ h2 .badge-light {
   #menu .figure h6 {
     margin-top: 10px;
     font-size: 0.8rem !important;
+    cursor: pointer;
   }
 }
 
@@ -514,6 +516,7 @@ h2 .badge-light {
   font-size: 1.3rem;
   color: #554f48;
   font-weight: lighter;
+  cursor: pointer;
 }
 
 #menu .figure:hover h6 {

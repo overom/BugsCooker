@@ -32,3 +32,24 @@ $(document).ready(function() {
     $("#platUn").attr();
   });
 });
+
+$(document).ready(function() {
+  $("#fermerDeux").click(function() {
+    $("#platDeux").slideToggle(1000);
+    $("#platDeux").attr();
+  });
+});
+
+$(document).ready(function() {
+  $("#fermerTrois").click(function() {
+    $("#platTrois").slideToggle(1000);
+    $("#platTrois").attr();
+  });
+});
+
+$(document).ready(function() {
+  $("#fermerQuatre").click(function() {
+    $("#platQuatre").slideToggle(1000);
+    $("#platQuatre").attr();
+  });
+});

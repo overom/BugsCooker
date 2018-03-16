@@ -80,7 +80,7 @@ function initMap() {
     '<div id="content">' +
     '<div id="siteNotice">' +
     "</div>" +
-    '<h2 id="firstHeading" class="firstHeading">Restaurant Bug Cooker</h2>' +
+    '<h2 id="firstHeading" class="firstHeading">Restaurant Bugs Cooker</h2>' +
     '<div id="bodyContent">' +
     "<p><strong>33 Quai Romain Roland 69005 LYON</br>06 79 83 45 15</strong></p>" +
     "<p><b>Bug cooker</b>, Quand les insectes s’invitent dans la cuisine du chef étoilé <b>David Faure</b>... Prêts pour l’expérience ? " +

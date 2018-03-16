@@ -11,7 +11,8 @@ nav {
   background-color: #fff8f3 !important;
   padding-right: 0px !important;
   padding-left: 0px !important;
-  font-family: Fuji;
+  font-family: Avenir, Fuji;
+  font-size: 0.8em;
 }
 
 .noMarginNoPadding {
@@ -50,6 +51,7 @@ header .btnReserv a {
 header .btnReserv a:hover {
   color: #fff8f3;
   background-color: #554f48;
+  opacity: 0.4;
 }
 
 header .btnReserv {
